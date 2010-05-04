@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  position: MyString
+  drafted: false
+  pick: 1
+  team: 
+
+two:
+  name: MyString
+  position: MyString
+  drafted: false
+  pick: 1
+  team: 

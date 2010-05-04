@@ -1,0 +1,17 @@
+<% title "Players" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for players in @players %>
+    <tr>
+      <td><%=h players.name %></td>
+      <td><%= link_to "Show", players %></td>
+      <td><%= link_to "Edit", edit_players_path(players) %></td>
+      <td><%= link_to "Destroy", players, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Players", new_players_path %></p>

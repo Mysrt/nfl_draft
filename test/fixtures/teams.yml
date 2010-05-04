@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  division: MyString
+  player: 
+
+two:
+  name: MyString
+  division: MyString
+  player: 

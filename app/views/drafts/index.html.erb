@@ -1,0 +1,17 @@
+<% title "Drafts" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for draft in @drafts %>
+    <tr>
+      <td><%=h draft.name %></td>
+      <td><%= link_to "Show", draft %></td>
+      <td><%= link_to "Edit", edit_draft_path(draft) %></td>
+      <td><%= link_to "Destroy", draft, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Draft", new_draft_path %></p>

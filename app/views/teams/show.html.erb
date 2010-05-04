@@ -1,0 +1,12 @@
+<% title "Teams" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @teams.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_teams_path(@teams) %> |
+  <%= link_to "Destroy", @teams, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", teams_path %>
+</p>
