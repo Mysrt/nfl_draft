@@ -1,0 +1,2546 @@
+Script started on Wed May  5 10:28:02 2010
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/server/generate
+bash: script/server/generate: Not a directory
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/server/generate               e generate
+Usage: script/generate generator [options] [args]
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+    -g, --git                        Modify files with git. (Note: git must be in path)
+
+
+Installed Generators
+  Rubygems: clearance, clearance_features, clearance_views, cucumber, feature, form, formtastic, formtastic_stylesheets, integration_spec, nifty_authentication, nifty_config, nifty_layout, nifty_scaffold, rspec, rspec_controller, rspec_model, rspec_scaffold
+  Builtin: controller, helper, integration_test, mailer, metal, migration, model, observer, performance_test, plugin, resource, scaffold, session_migration
+
+More are available at http://wiki.rubyonrails.org/rails/pages/AvailableGenerators
+  1. Download, for example, login_generator.zip
+  2. Unzip to directory /Users/jamestrowbridge/.rails/generators/login
+     to use the generator with all your Rails apps
+     or to /Users/jamestrowbridge/dev/nfl_draft/lib/generators/login
+     to use with this app only.
+  3. Run generate with no arguments for usage information
+       script/generate login
+
+Generator gems are also available:
+  1. gem search -r generator
+  2. gem install login_generator
+  3. script/generate login
+
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/generate rspec scaffold         _scaffold
+Usage: script/generate rspec_scaffold ModelName [field:type field:type]
+
+Options:
+        --skip-migration             Don't generate a migration file for this model
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+    -g, --git                        Modify files with git. (Note: git must be in path)
+
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/generate
+Usage: script/generate generator [options] [args]
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+    -g, --git                        Modify files with git. (Note: git must be in path)
+
+
+Installed Generators
+  Rubygems: clearance, clearance_features, clearance_views, cucumber, feature, form, formtastic, formtastic_stylesheets, integration_spec, nifty_authentication, nifty_config, nifty_layout, nifty_scaffold, rspec, rspec_controller, rspec_model, rspec_scaffold
+  Builtin: controller, helper, integration_test, mailer, metal, migration, model, observer, performance_test, plugin, resource, scaffold, session_migration
+
+More are available at http://wiki.rubyonrails.org/rails/pages/AvailableGenerators
+  1. Download, for example, login_generator.zip
+  2. Unzip to directory /Users/jamestrowbridge/.rails/generators/login
+     to use the generator with all your Rails apps
+     or to /Users/jamestrowbridge/dev/nfl_draft/lib/generators/login
+     to use with this app only.
+  3. Run generate with no arguments for usage information
+       script/generate login
+
+Generator gems are also available:
+  1. gem search -r generator
+  2. gem install login_generator
+  3. script/generate login
+
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/generate rspec
+Configuring rspec and rspec-rails gems in config/environments/test.rb ...
+
+      exists  lib/tasks
+      create  lib/tasks/rspec.rake
+      create  script/autospec
+      create  script/spec
+      create  spec
+      create  spec/rcov.opts
+      create  spec/spec.opts
+      create  spec/spec_helper.rb
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ D script/generate rspec c_scaf    model 4 pick
+      exists  app/models/
+      create  spec/models/
+      create  spec/fixtures/
+overwrite app/models/pick.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/models/pick.rb
+      create  spec/models/pick_spec.rb
+      create  spec/fixtures/picks.yml
+      exists  db/migrate
+Another migration is already named create_picks: db/migrate/20100504201821_create_picks.rb
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/generate rspec_model pick    team
+      exists  app/models/
+      exists  spec/models/
+      exists  spec/fixtures/
+overwrite app/models/team.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/models/team.rb
+      create  spec/models/team_spec.rb
+      create  spec/fixtures/teams.yml
+      exists  db/migrate
+Another migration is already named create_teams: db/migrate/20100504201701_create_teams.rb
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ script/generate rspec_model team    player
+      exists  app/models/
+      exists  spec/models/
+      exists  spec/fixtures/
+overwrite app/models/player.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/models/player.rb
+      create  spec/models/player_spec.rb
+      create  spec/fixtures/players.yml
+      exists  db/migrate
+Another migration is already named create_players: db/migrate/20100504201307_create_players.rb
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec    re spec pick
+bash: rspec: command not found
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec pick
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: pick (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec pick[4hm[4l[4ho[4l[4hd[4l[4he[4l[4hl[4l[4hs[4l[4h/[4lpick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: models/pick_spec.rb (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec models/pick_spec.rb[1P[1P[1P[1P[1P[1P[1P
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: pick_spec.rb (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec pick_spec.rb[4hr[4l[4hs[4lp[4hp[4l[4he[4l[4hc[4l[4h/[4l[4hm[4l[4ho[4l[4hd[4l[4he[4l[4hl[4l[4hs[4l[4h/[4l
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: rspec/models/pick_spec.rb (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec rspec/models/pick_spec.rb[4h/[4l
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: /rspec/models/pick_spec.rb (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec /rspec/models/pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: /rspec/models/pick_spec.rb (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ spec /rspec/models/pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:283:in `files_to_load': File or directory not found: /rspec/models/pick_spec.rb (RuntimeError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:275:in `files_to_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft[0m ➔ cd spec
+[0;35m(master)[0;32m~/dev/nfl_draft/spec[0m ➔ ls
+[34mfixtures[m[m       [34mmodels[m[m         rcov.opts      spec.opts      spec_helper.rb
+[0;35m(master)[0;32m~/dev/nfl_draft/spec[0m ➔ cd models
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ ls
+pick_spec.rb   player_spec.rb team_spec.rb
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+F
+
+1)
+ActiveRecord::StatementInvalid in 'Pick should create a new instance given valid attributes'
+Could not find table 'picks'
+./pick_spec.rb:11:
+
+Finished in 0.032936 seconds
+
+1 example, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:7: syntax error, unexpected tSYMBEG, expecting '}' (SyntaxError)
+      :name         => "Colt Mccoy"
+       ^
+./pick_spec.rb:8: syntax error, unexpected tASSOC, expecting kEND
+      :pick_number  => 4
+                      ^
+./pick_spec.rb:9: syntax error, unexpected tASSOC, expecting kEND
+      :team_id      => 32
+                      ^
+./pick_spec.rb:16: syntax error, unexpected $end, expecting kEND
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:7: syntax error, unexpected tSYMBEG, expecting '}' (SyntaxError)
+      :pick_number  => 4
+       ^
+./pick_spec.rb:8: syntax error, unexpected tASSOC, expecting kEND
+      :team_id      => 32
+                      ^
+./pick_spec.rb:15: syntax error, unexpected $end, expecting kEND
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+F
+
+1)
+ActiveRecord::StatementInvalid in 'Pick should create a new instance given valid attributes'
+Could not find table 'picks'
+./pick_spec.rb:13:
+
+Finished in 0.031027 seconds
+
+1 example, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+F
+
+1)
+ActiveRecord::StatementInvalid in 'Pick should create a new instance given valid attributes'
+Could not find table 'picks'
+./pick_spec.rb:13:
+
+Finished in 0.03174 seconds
+
+1 example, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:25: syntax error, unexpected kEND, expecting $end (SyntaxError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:27: syntax error, unexpected kEND, expecting $end (SyntaxError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb[8Pcd models
+bash: cd: models: No such file or directory
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ cd models[Kcd modelsspec pick_spec.rb
+FFF
+
+1)
+ActiveRecord::StatementInvalid in 'Pick should be able to have a player assigned to the pick'
+Could not find table 'picks'
+./pick_spec.rb:5:
+
+2)
+ActiveRecord::StatementInvalid in 'Pick a new pick that is created should have a team that owns the pick'
+Could not find table 'picks'
+./pick_spec.rb:5:
+
+3)
+ActiveRecord::StatementInvalid in 'Pick a new pick that is created should not have a player assigned to it yet'
+Could not find table 'picks'
+./pick_spec.rb:5:
+
+Finished in 0.033931 seconds
+
+3 examples, 3 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake rb  db:migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migratespec pick_spec.rb
+FFF
+
+1)
+ActiveRecord::StatementInvalid in 'Pick should be able to have a player assigned to the pick'
+Could not find table 'picks'
+./pick_spec.rb:5:
+
+2)
+ActiveRecord::StatementInvalid in 'Pick a new pick that is created should have a team that owns the pick'
+Could not find table 'picks'
+./pick_spec.rb:5:
+
+3)
+ActiveRecord::StatementInvalid in 'Pick a new pick that is created should not have a player assigned to it yet'
+Could not find table 'picks'
+./pick_spec.rb:5:
+
+Finished in 0.035626 seconds
+
+3 examples, 3 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:prepare
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:prepare[Krake db:test:prepare[3Pspec pick_spec.rb[2Prake db:migratespec pick_spec.rb
+.F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team that owns the pick'
+Couldn't find Team with ID=32
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:6:in `team'
+./pick_spec.rb:14:
+
+Finished in 0.047 seconds
+
+3 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+.F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team that owns the pick'
+Couldn't find Team with ID=32
+./pick_spec.rb:15:
+
+Finished in 0.047663 seconds
+
+3 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+..F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team object that owns the pick'
+Couldn't find Team with ID=32
+./pick_spec.rb:19:
+
+Finished in 0.052504 seconds
+
+4 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+..F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team object that owns the pick'
+Couldn't find Team with ID=32
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:6:in `team'
+./pick_spec.rb:19:
+
+Finished in 0.051599 seconds
+
+4 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+..F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team object that owns the pick'
+Couldn't find Team with ID=32
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:6:in `team'
+./pick_spec.rb:19:
+
+Finished in 0.050978 seconds
+
+4 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+..F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team object that owns the pick'
+Couldn't find Team with ID=32
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:6:in `team'
+./pick_spec.rb:19:
+
+Finished in 0.05084 seconds
+
+4 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+..F.
+
+1)
+ActiveRecord::RecordNotFound in 'Pick a new pick that is created should have a team object that owns the pick'
+Couldn't find Team with ID=32
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:6:in `team'
+./pick_spec.rb:19:
+
+Finished in 0.051583 seconds
+
+4 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ raspec pick_spec.rbrake db:test:prepare[3Pspec pick_spec.rb[2Prake db:migratespec pick_spec.rb[8Pcd modelsspec pick_spec.rb[8Pcd models[2Pspecmodelsspec pick_spec.rb[8Pcd modelsspec pick_spec.rb[8Pcd modelsspec pick_spec.rb[8Pcd models[2Pspec       spec /rspec/models/pick_spec.rb[1Prspec/models/pick_spec.rb[13Ppick_spec.rb[4hmodels/[4lpick_spec.rbpick[K[4hr[4lspec pickscript/generate rspec_model player[2Pteampick[K[K rspec_scaffold[K[4hserver/[4lgenerate[7Pgenerate[4hserver/[4lgenerate[Kcd deliverme/rake db:migratescript/generate model home name:string[3Pnifty_layout layoutmodel home name:string[23Prake db:migrate[2Pcd deliverme/script/server/generate[7Pgenerate rspec_scaffold[K rspec_model pickteamplayerrspec pick[K[1Pspec pickmodels/pick_spec.rb[7Ppick_spec.rb[4hrspec/models/[4lpick_spec.rb[4h/[4lrspec/models/pick_spec.rb[Kcd modelsspec pick_spec.rb[8Pcd modelsspec pick_spec.rb[2Prake db:migratespec pick_spec.rb[2Prake db:migratespec pick_spec.rbrake db:test:prepare[3Pspec pick_spec.rbrake db:test:prepare                    spec pick_spec.rb
+....
+
+Finished in 0.058568 seconds
+
+4 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb[Kspec pick_spec.rb
+....
+
+Finished in 0.056856 seconds
+
+4 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: reverting ====================================================
+-- drop_table(:picks)
+   -> 0.0008s
+==  CreatePicks: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: migrating ====================================================
+-- create_table(:picks)
+   -> 0.0015s
+==  CreatePicks: migrated (0.0016s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔  rake db:test:prepare
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔  rake db:test:prepare
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔  rake db:test:prepare[6Prake db:migraterollbackspec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:40: syntax error, unexpected ')' (SyntaxError)
+./pick_spec.rb:49: syntax error, unexpected $end, expecting kEND
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:36: syntax error, unexpected kEND, expecting $end (SyntaxError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:20: syntax error, unexpected kEND, expecting $end (SyntaxError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ r rake db:test:prepare
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake dbLm  :migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migrate[4htest:[4lprepare[3Pspec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb[1P[1P[1P[1P[4hp[4l[4hl[4l[4ha[4l[4hy[4l[4he[4l[4hr[4l
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./player_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec player_spec.rb[2Pick_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./pick_spec.rb:51: syntax error, unexpected kEND, expecting $end (SyntaxError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:10: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+...FFF
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the who has the current pick'
+undefined method `current' for #<Class:0x1021e1088>
+./pick_spec.rb:37:
+
+2)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+undefined method `next' for #<Class:0x1021e1088>
+./pick_spec.rb:41:
+
+3)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the previous picks'
+undefined method `previous' for #<Class:0x1021e1088>
+./pick_spec.rb:45:
+
+Finished in 0.0664680000000001 seconds
+
+6 examples, 3 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+....F.
+
+1)
+SystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:24:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:24:in `next'
+./pick_spec.rb:41:
+
+Finished in 0.248245 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb[4hla[4lyer_spec.rb[2Pick_spec.rb
+...FF.
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the who has the current pick'
+undefined method `find_first' for #<Class:0x1021e07f0>
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:10:in `current'
+./pick_spec.rb:37:
+
+2)
+SystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+./pick_spec.rb:41:
+
+Finished in 0.248254 seconds
+
+6 examples, 2 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+...FF.
+
+1)
+ArgumentError in 'Pick when the draft is currently going on should be able to keep track of the who has the current pick'
+Unknown key(s): used
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:10:in `current'
+./pick_spec.rb:37:
+
+2)
+SystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+./pick_spec.rb:41:
+
+Finished in 0.251251 seconds
+
+6 examples, 2 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake dbLm  :migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test
+(in /Users/jamestrowbridge/dev/nfl_draft)
+rake aborted!
+Don't know how to build task 'db:test'
+
+(See full trace by running task with --trace)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:prepare
+(in /Users/jamestrowbridge/dev/nfl_draft)
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ 
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[32m.[0m[32m.[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+1)
+[31mArgumentError in 'Pick when the draft is currently going on should be able to keep track of the who has the current pick'
+Unknown key(s): used[0m
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:10:in `current'
+./spec/models/pick_spec.rb:37:
+
+2)
+[31mSystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep[0m
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+./spec/models/pick_spec.rb:41:
+
+Finished in 0.263882 seconds
+
+[31m8 examples, 2 failures[0m
+rake aborted!
+Command /opt/local/bin/ruby -I"lib"  "/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec" "spec/models/pick_spec.rb" "spec/models/player_spec.rb" "spec/models/team_spec.rb" --options "/Users/jamestrowbridge/dev/nfl_draft/spec/spec.opts" failed
+
+(See full trace by running task with --trace)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake -h
+rake [-f rakefile] {options} targets...
+
+Options are ...
+    -C, --classic-namespace          Put Task and FileTask in the top level namespace
+    -D, --describe [PATTERN]         Describe the tasks (matching optional PATTERN), then exit.
+    -n, --dry-run                    Do a dry run without executing actions.
+    -e, --execute CODE               Execute some Ruby code and exit.
+    -p, --execute-print CODE         Execute some Ruby code, print the result, then exit.
+    -E, --execute-continue CODE      Execute some Ruby code, then continue with normal task processing.
+    -I, --libdir LIBDIR              Include LIBDIR in the search path for required modules.
+    -P, --prereqs                    Display the tasks and dependencies, then exit.
+    -q, --quiet                      Do not log messages to standard output.
+    -f, --rakefile [FILE]            Use FILE as the rakefile.
+    -R, --rakelibdir RAKELIBDIR      Auto-import any .rake files in RAKELIBDIR. (default is 'rakelib')
+        --rakelib
+    -r, --require MODULE             Require MODULE before executing rakefile.
+        --rules                      Trace the rules resolution.
+    -N, --no-search, --nosearch      Do not search parent directories for the Rakefile.
+    -s, --silent                     Like --quiet, but also suppresses the 'in directory' announcement.
+    -g, --system                     Using system wide (global) rakefiles (usually '~/.rake/*.rake').
+    -G, --no-system, --nosystem      Use standard project Rakefile search paths, ignore system wide rakefiles.
+    -T, --tasks [PATTERN]            Display the tasks (matching optional PATTERN) with descriptions, then exit.
+    -t, --trace                      Turn on invoke/execute tracing, enable full backtrace.
+    -v, --verbose                    Log message to standard output.
+    -V, --version                    Display the program version.
+    -h, -H, --help                   Display this help message.
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake -h t T
+(in /Users/jamestrowbridge/dev/nfl_draft)
+rake db:abort_if_pending_migrations       # Raises an error if there are pending migrations
+rake db:charset                           # Retrieves the charset for the current environment's database
+rake db:collation                         # Retrieves the collation for the current environment's database
+rake db:create                            # Create the database defined in config/database.yml for the current RAIL...
+rake db:create:all                        # Create all the local databases defined in config/database.yml
+rake db:draft_information                 # Load Players, Draft Order, and teams from csv file
+rake db:drop                              # Drops the database for the current RAILS_ENV
+rake db:drop:all                          # Drops all the local databases defined in config/database.yml
+rake db:fixtures:identify                 # Search for a fixture given a LABEL or ID.
+rake db:fixtures:load                     # Load fixtures into the current environment's database.
+rake db:migrate                           # Migrate the database through scripts in db/migrate and update db/schema...
+rake db:migrate:down                      # Runs the "down" for a given migration VERSION.
+rake db:migrate:redo                      # Rollbacks the database one migration and re migrate up.
+rake db:migrate:reset                     # Resets your database using your migrations for the current environment
+rake db:migrate:up                        # Runs the "up" for a given migration VERSION.
+rake db:reset                             # Drops and recreates the database from db/schema.rb for the current envi...
+rake db:rollback                          # Rolls the schema back to the previous version.
+rake db:schema:dump                       # Create a db/schema.rb file that can be portably used against any DB sup...
+rake db:schema:load                       # Load a schema.rb file into the database
+rake db:seed                              # Load the seed data from db/seeds.rb
+rake db:sessions:clear                    # Clear the sessions table
+rake db:sessions:create                   # Creates a sessions migration for use with ActiveRecord::SessionStore
+rake db:setup                             # Create the database, load the schema, and initialize with the seed data
+rake db:structure:dump                    # Dump the database structure to a SQL file
+rake db:test:clone                        # Recreate the test database from the current environment's database schema
+rake db:test:clone_structure              # Recreate the test databases from the development structure
+rake db:test:load                         # Recreate the test database from the current schema.rb
+rake db:test:prepare                      # Check for pending migrations and load the test schema
+rake db:test:purge                        # Empty the test database
+rake db:version                           # Retrieves the current schema version number
+rake doc:app                              # Build the RDOC HTML Files
+rake doc:clobber_app                      # Remove rdoc products
+rake doc:clobber_plugins                  # Remove plugin documentation
+rake doc:clobber_rails                    # Remove rdoc products
+rake doc:guides                           # Generate Rails guides
+rake doc:plugins                          # Generate documentation for all installed plugins
+rake doc:rails                            # Build the RDOC HTML Files
+rake doc:reapp                            # Force a rebuild of the RDOC files
+rake doc:rerails                          # Force a rebuild of the RDOC files
+rake gems                                 # List the gems that this rails application depends on
+rake gems:build                           # Build any native extensions for unpacked gems
+rake gems:build:force                     # Force the build of all gems
+rake gems:install                         # Installs all required gems.
+rake gems:refresh_specs                   # Regenerate gem specifications in correct format.
+rake gems:unpack                          # Unpacks all required gems into vendor/gems.
+rake gems:unpack:dependencies             # Unpacks all required gems and their dependencies into vendor/gems.
+rake log:clear                            # Truncates all *.log files in log/ to zero bytes
+rake middleware                           # Prints out your Rack middleware stack
+rake notes                                # Enumerate all annotations
+rake notes:custom                         # Enumerate a custom annotation, specify with ANNOTATION=WTFHAX
+rake notes:fixme                          # Enumerate all FIXME annotations
+rake notes:optimize                       # Enumerate all OPTIMIZE annotations
+rake notes:todo                           # Enumerate all TODO annotations
+rake rails:freeze:edge                    # Lock to latest Edge Rails, for a specific release use RELEASE=1.2.0
+rake rails:freeze:gems                    # Lock this application to the current gems (by unpacking them into vendo...
+rake rails:template                       # Applies the template supplied by LOCATION=/path/to/template
+rake rails:unfreeze                       # Unlock this application from freeze of gems or edge and return to a flu...
+rake rails:update                         # Update both configs, scripts and public/javascripts from Rails
+rake rails:update:application_controller  # Rename application.rb to application_controller.rb
+rake rails:update:configs                 # Update config/boot.rb from your current rails install
+rake rails:update:generate_dispatchers    # Generate dispatcher files in RAILS_ROOT/public
+rake rails:update:javascripts             # Update your javascripts from your current rails install
+rake rails:update:scripts                 # Add new scripts to the application script/ directory
+rake routes                               # Print out all defined routes in match order, with names.
+rake secret                               # Generate a crytographically secure secret key.
+rake spec                                 # Run all specs in spec directory (excluding plugin specs)
+rake spec:clobber_rcov                    # Remove rcov products for rcov
+rake spec:controllers                     # Run the code examples in spec/controllers
+rake spec:db:fixtures:load                # Load fixtures (from spec/fixtures) into the current environment's datab...
+rake spec:doc                             # Print Specdoc for all specs (excluding plugin specs)
+rake spec:helpers                         # Run the code examples in spec/helpers
+rake spec:integration                     # Run the code examples in spec/integration
+rake spec:lib                             # Run the code examples in spec/lib
+rake spec:models                          # Run the code examples in spec/models
+rake spec:plugin_doc                      # Print Specdoc for all plugin examples
+rake spec:plugins                         # Run the code examples in vendor/plugins (except RSpec's own)
+rake spec:plugins:rspec_on_rails          # Runs the examples for rspec_on_rails
+rake spec:rcov                            # Run all specs in spec directory with RCov (excluding plugin specs)
+rake spec:views                           # Run the code examples in spec/views
+rake stats                                # Report code statistics (KLOCs, etc) from the application
+rake test                                 # Run all unit, functional and integration tests
+rake test:benchmark                       # Run tests for benchmarkdb:test:prepare / Benchmark the performance tests
+rake test:functionals                     # Run tests for functionalsdb:test:prepare / Run the functional tests in ...
+rake test:integration                     # Run tests for integrationdb:test:prepare / Run the integration tests in...
+rake test:plugins                         # Run tests for pluginsenvironment / Run the plugin tests in vendor/plugi...
+rake test:profile                         # Run tests for profiledb:test:prepare / Profile the performance tests
+rake test:recent                          # Run tests for recentdb:test:prepare / Test recent changes
+rake test:uncommitted                     # Run tests for uncommitteddb:test:prepare / Test changes since last chec...
+rake test:units                           # Run tests for unitsdb:test:prepare / Run the unit tests in test/unit
+rake time:zones:all                       # Displays names of all time zones recognized by the Rails TimeZone class...
+rake time:zones:local                     # Displays names of time zones recognized by the Rails TimeZone class wit...
+rake time:zones:us                        # Displays names of US time zones recognized by the Rails TimeZone class,...
+rake tmp:cache:clear                      # Clears all files and directories in tmp/cache
+rake tmp:clear                            # Clear session, cache, and socket files from tmp/
+rake tmp:create                           # Creates tmp directories for sessions, cache, sockets, and pids
+rake tmp:pids:clear                       # Clears all files in tmp/pids
+rake tmp:sessions:clear                   # Clears all files in tmp/sessions
+rake tmp:sockets:clear                    # Clears all files in tmp/sockets
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake -Th[K db:test:prepare       load
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:load-T[Kh[K db:test:prepare[Kmigratespec pick_spec.rb[4hla[4lyer_spec.rb[2Pick_spec.rb
+...FF.
+
+1)
+ArgumentError in 'Pick when the draft is currently going on should be able to keep track of the who has the current pick'
+Unknown key(s): used
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:10:in `current'
+./pick_spec.rb:37:
+
+2)
+SystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+./pick_spec.rb:41:
+
+Finished in 0.250353 seconds
+
+6 examples, 2 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+....F.
+
+1)
+SystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:20:in `next'
+./pick_spec.rb:41:
+
+Finished in 0.252614 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rbrake db:test:load-T[Kdb:test:load-T[Kh[K db:test:prepare[Kd  db:rol;ba   lback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: reverting ====================================================
+-- drop_table(:picks)
+   -> 0.0008s
+==  CreatePicks: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake dbL :rikk   ollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateTeams: reverting ====================================================
+-- drop_table(:teams)
+   -> 0.0008s
+==  CreateTeams: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: reverting ==================================================
+-- drop_table(:players)
+   -> 0.0009s
+==  CreatePlayers: reverted (0.0010s) =========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: migrating ==================================================
+-- create_table(:players)
+   -> 0.0016s
+==  CreatePlayers: migrated (0.0017s) =========================================
+
+==  CreateTeams: migrating ====================================================
+-- create_table(:teams)
+   -> 0.0014s
+==  CreateTeams: migrated (0.0015s) ===========================================
+
+==  CreatePicks: migrating ====================================================
+-- create_table(:picks)
+   -> 0.0018s
+==  CreatePicks: migrated (0.0019s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_information[10Pmigraterollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: reverting ====================================================
+-- drop_table(:picks)
+   -> 0.0009s
+==  CreatePicks: reverted (0.0010s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateTeams: reverting ====================================================
+-- drop_table(:teams)
+   -> 0.0009s
+==  CreateTeams: reverted (0.0010s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: reverting ==================================================
+-- drop_table(:players)
+   -> 0.0010s
+==  CreatePlayers: reverted (0.0011s) =========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: migrating ==================================================
+-- create_table(:players)
+   -> 0.0018s
+==  CreatePlayers: migrated (0.0019s) =========================================
+
+==  CreateTeams: migrating ====================================================
+-- create_table(:teams)
+   -> 0.0014s
+==  CreateTeams: migrated (0.0015s) ===========================================
+
+==  CreatePicks: migrating ====================================================
+-- create_table(:picks)
+   -> 0.0089s
+==  CreatePicks: migrated (0.0091s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migraterollbackdraft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:reload
+(in /Users/jamestrowbridge/dev/nfl_draft)
+rake aborted!
+Don't know how to build task 'db:test:reload'
+
+(See full trace by running task with --trace)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:reloaddraft_information[10Pmigraterollbackdraft_information[10Pmigraterollbackspec pick_spec.rbrake db:test:load
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:load[4hre[4lloaddraft_information[10Pmigraterollbackdraft_information[10Pmigraterollbackspec pick_spec.rbrake db:test:loadspec pick_spec.rb
+....F.
+
+1)
+SystemStackError in 'Pick when the draft is currently going on should be able to keep track of the who has the next pick'
+stack level too deep
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:18:in `next'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:18:in `next'
+./pick_spec.rb:41:
+
+Finished in 0.255385 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+.....F
+
+1)
+ActiveRecord::RecordNotFound in 'Pick when the draft is currently going on should be able to keep track of the previous picks'
+Couldn't find Pick with ID=0
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:14:in `previous'
+./pick_spec.rb:56:
+
+Finished in 0.074564 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+.....F
+
+1)
+ActiveRecord::RecordNotFound in 'Pick when the draft is currently going on should be able to keep track of the previous picks'
+Couldn't find Pick with ID=0
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:16:in `previous'
+./pick_spec.rb:56:
+
+Finished in 0.074322 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+.....F
+
+1)
+ActiveRecord::RecordNotFound in 'Pick when the draft is currently going on should be able to keep track of the previous picks'
+Couldn't find Pick with ID=0
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:16:in `previous'
+./pick_spec.rb:56:
+
+Finished in 0.073231 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: reverting ====================================================
+-- drop_table(:picks)
+   -> 0.0008s
+==  CreatePicks: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateTeams: reverting ====================================================
+-- drop_table(:teams)
+   -> 0.0008s
+==  CreateTeams: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: reverting ==================================================
+-- drop_table(:players)
+   -> 0.0009s
+==  CreatePlayers: reverted (0.0010s) =========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake dbL :migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: migrating ==================================================
+-- create_table(:players)
+   -> 0.0084s
+==  CreatePlayers: migrated (0.0085s) =========================================
+
+==  CreateTeams: migrating ====================================================
+-- create_table(:teams)
+   -> 0.0012s
+==  CreateTeams: migrated (0.0013s) ===========================================
+
+==  CreatePicks: migrating ====================================================
+-- create_table(:picks)
+   -> 0.0017s
+==  CreatePicks: migrated (0.0018s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:   db:test:load
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:loaddraft_information[10Pmigraterollbackspec pick_spec.rbrake db:test:load[4hre[4lload[2Ploadspec pick_spec.rb
+.....F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the previous picks'
+undefined method `pick_number' for nil:NilClass
+./pick_spec.rb:56:
+
+Finished in 0.154601 seconds
+
+6 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+....FF
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the team who has the next pick'
+undefined method `<' for #<Pick:0x10346e458>
+./pick_spec.rb:46:
+
+2)
+NoMethodError in 'Pick when the draft is currently going on should be able to keep track of the previous picks'
+undefined method `>' for #<Pick:0x1034522a8>
+./pick_spec.rb:56:
+
+Finished in 0.125274 seconds
+
+6 examples, 2 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......
+
+Finished in 0.123247 seconds
+
+6 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ D spec team_spec.rb
+/opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load': ./team_spec.rb:28: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+F
+
+1)
+NoMethodError in 'Team when we draft a player should be owned by us, unless he holds out on his contract'
+undefined method `add' for #<Class:0x10218e1d0>
+/Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:14:in `draft'
+./team_spec.rb:25:
+
+Finished in 0.054368 seconds
+
+1 example, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+F
+
+1)
+NoMethodError in 'Team when we draft a player should be owned by us, unless he holds out on his contract'
+undefined method `contains' for #<Class:0x10218e1d0>
+./team_spec.rb:26:
+
+Finished in 0.057387 seconds
+
+1 example, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+.
+
+Finished in 0.0559310000000001 seconds
+
+1 example, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ script/generate nifty_authentication
+bash: script/generate: No such file or directory
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ script/generate nifty_authentication[19Ppec team_spec.rb_spe[1P[1P[1P[1P[4ht[4l[4he[4l[4ha[4l[4hm[4l
+.
+
+Finished in 0.104533 seconds
+
+1 example, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+.F
+
+1)
+ArgumentError in 'Team when we draft a player should use kiper best available if no player is given'
+wrong number of arguments (0 for 1)
+./team_spec.rb:31:in `draft'
+./team_spec.rb:31:
+
+Finished in 0.109169 seconds
+
+2 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+.F
+
+1)
+NameError in 'Team when we draft a player should use kiper best available if no player is given'
+undefined local variable or method `player' for #<ActiveSupport::TestCase::Subclass_1::Subclass_1:0x10396ae20>
+./team_spec.rb:31:
+
+Finished in 0.111914 seconds
+
+2 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+.F
+
+1)
+ArgumentError in 'Team when we draft a player should use kiper best available if no player is given'
+wrong number of arguments (0 for 1)
+./team_spec.rb:31:in `draft'
+./team_spec.rb:31:
+
+Finished in 0.112606 seconds
+
+2 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+.F
+
+1)
+NoMethodError in 'Team when we draft a player should use kiper best available if no player is given'
+undefined method `kipers_best_available' for nil:NilClass
+/Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:6:in `kiper_draft'
+./team_spec.rb:31:
+
+Finished in 0.113086 seconds
+
+2 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+..
+
+Finished in 0.119059 seconds
+
+2 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb[1P[1P[1P[1P[4hp[4l[4hl[4l[4ha[4l[4hy[4l[4he[4l[4hr[4l
+.F
+
+1)
+NameError in 'Player when he is drafted should update the pick with him as the player'
+undefined local variable or method `player' for #<ActiveSupport::TestCase::Subclass_1::Subclass_1:0x10396eef8>
+./player_spec.rb:31:
+
+Finished in 0.111181 seconds
+
+2 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec player_spec.rb
+.F
+
+1)
+NameError in 'Player when he is drafted should update the pick with him as the player'
+undefined local variable or method `player' for #<ActiveSupport::TestCase::Subclass_1::Subclass_1:0x10396eef8>
+./player_spec.rb:31:
+
+Finished in 0.111409 seconds
+
+2 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec player_spec.rb
+..
+
+Finished in 0.11778 seconds
+
+2 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec player_spec.rb[1P[1P[1P[1P[1P[1P[4hu[4l[4hs[4l[4he[4l[4hr[4l
+FFFFFFFFFFFFFF
+
+1)
+ActiveRecord::StatementInvalid in 'User should be valid'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+2)
+ActiveRecord::StatementInvalid in 'User should require username'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+3)
+ActiveRecord::StatementInvalid in 'User should require password'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+4)
+ActiveRecord::StatementInvalid in 'User should require well formed email'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+5)
+ActiveRecord::StatementInvalid in 'User should validate uniqueness of email'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+6)
+ActiveRecord::StatementInvalid in 'User should validate uniqueness of username'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+7)
+ActiveRecord::StatementInvalid in 'User should not allow odd characters in username'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+8)
+ActiveRecord::StatementInvalid in 'User should validate password is longer than 3 characters'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+9)
+ActiveRecord::StatementInvalid in 'User should require matching password confirmation'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+10)
+ActiveRecord::StatementInvalid in 'User should generate password hash and salt on create'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+11)
+ActiveRecord::StatementInvalid in 'User should authenticate by username'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+12)
+ActiveRecord::StatementInvalid in 'User should authenticate by email'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+13)
+ActiveRecord::StatementInvalid in 'User should not authenticate bad username'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+14)
+ActiveRecord::StatementInvalid in 'User should not authenticate bad password'
+SQLite3::SQLException: no such table: users: DELETE FROM "users"  WHERE 1=1
+./user_spec.rb:13:
+
+Finished in 0.094464 seconds
+
+14 examples, 14 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:load
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:test:loadspec user_spec.rb
+..............
+
+Finished in 0.148822 seconds
+
+14 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec user_spec.rb[1P[1P[1P[1P[4hp[4l[4hi[4l[4hc[4l[4hk[4l
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `pick_one' for #<ActiveSupport::TestCase::Subclass_1::Subclass_2:0x1039454b8>
+./pick_spec.rb:65:
+
+Finished in 0.128969 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `current_pick=' for #<Class:0x10201ca68>
+./pick_spec.rb:81:
+
+Finished in 0.133526 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `current_pick' for #<Class:0x10201ca68>
+./pick_spec.rb:81:
+
+Finished in 0.12919 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `previous_picks' for #<Class:0x10201ca90>
+./pick_spec.rb:82:
+
+Finished in 0.135478 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:28: syntax error, unexpected tASSOC, expecting ')' (SyntaxError)
+    picks = Pick.find(:all, :conditions => :used => true)
+                                                   ^
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `<=>' for #<Pick:0x1038f55d0>
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:29:in `previous_picks'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:29:in `sort'
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:29:in `previous_picks'
+./pick_spec.rb:82:
+
+Finished in 0.13351 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+ActiveRecord::RecordNotFound in 'Pick when the draft is currently going on should be able to find the last three picks'
+Couldn't find Pick without an ID
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:28:in `previous_picks'
+./pick_spec.rb:82:
+
+Finished in 0.135062 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+.......
+
+Finished in 0.136381 seconds
+
+7 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:39: syntax error, unexpected $end, expecting kEND (SyntaxError)
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `sort_by!' for #<Array:0x1038f8398>
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:30:in `previous_picks'
+./pick_spec.rb:82:
+
+Finished in 0.134667 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined method `sort_by!' for #<Array:0x1038f6610>
+/Users/jamestrowbridge/dev/nfl_draft/app/models/pick.rb:30:in `previous_picks'
+./pick_spec.rb:81:
+
+Finished in 0.135996 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size
+./pick_spec.rb:82:
+
+Finished in 0.135346 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......nil
+F
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size
+./pick_spec.rb:83:
+
+Finished in 0.138333 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......#<Pick:0x1038f3e88>
+#<Pick:0x1038f3de8>
+#<Pick:0x1038f3d48>
+.
+
+Finished in 0.139272 seconds
+
+7 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb[Kspec pick_spec.rb
+......#<Pick:0x1038fdeb0>
+#<Pick:0x1038fde10>
+F
+
+1)
+NameError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined local variable or method `pick_one' for #<ActiveSupport::TestCase::Subclass_1::Subclass_2:0x1039458a0>
+./pick_spec.rb:79:
+
+Finished in 0.135904 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......#<Pick:0x1038fdeb0>
+#<Pick:0x1038fde10>
+F
+
+1)
+NameError in 'Pick when the draft is currently going on should be able to find the last three picks'
+undefined local variable or method `pick_one' for #<ActiveSupport::TestCase::Subclass_1::Subclass_2:0x1039458a0>
+./pick_spec.rb:79:
+
+Finished in 0.135166 seconds
+
+7 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+........
+
+Finished in 0.144919 seconds
+
+8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+.......#<Pick:0x1038ba1d8>
+.
+
+Finished in 0.144705 seconds
+
+8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+........
+
+Finished in 0.144353 seconds
+
+8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+......FF
+
+1)
+NoMethodError in 'Pick when the draft is currently going on should be able to find the last three picks'
+You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size
+./pick_spec.rb:82:
+
+2)
+NoMethodError in 'Pick when the draft is currently going on should give the appropriate amount of picks if there are less than three'
+You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+./pick_spec.rb:96:
+
+Finished in 0.141313 seconds
+
+8 examples, 2 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit
+7[?47h[?1h=[1;40r[m[H[2J[40;1H".git/COMMIT_EDITMSG" 62L, 2133C[>c[1;1H[1m[30m  1 [m[1m                                                                                                                    [m[2;1H[30m  2 [m[33m# Please enter the commit message for your changes. Lines starting[m
+[30m  3 [m[33m# with '#' will be ignored, and an empty message aborts the commit.[m
+[30m  4 [m[33m#[m
+[30m  5 [m[33m# Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m
+[30m  6 [m[33m#[m
+[30m  7 [m[33m# On branch [m[37mmaster[m
+[30m  8 [m[33m# [m[34mChanges to be committed:[m
+[30m  9 [m[33m#   (use "git reset HEAD <file>..." to unstage)[m
+[30m 10 [m[33m#[m
+[30m 11 [m[33m# new file: [m[36m  pick_spec.rb[m
+[30m 12 [m[33m# new file: [m[36m  player_spec.rb[m
+[30m 13 [m[33m# new file: [m[36m  team_spec.rb[m
+[30m 14 [m[33m# new file: [m[36m  user_spec.rb[m
+[30m 15 [m[33m#[m
+[30m 16 [m[33m# [m[34mChanged but not updated:[m
+[30m 17 [m[33m#   (use "git add <file>..." to update what will be committed)[m
+[30m 18 [m[33m#   (use "git checkout -- <file>..." to discard changes in working directory)[m
+[30m 19 [m[33m#[m
+[30m 20 [m[33m# modified: [m[36m  ../../app/controllers/application_controller.rb[m
+[30m 21 [m[33m# modified: [m[36m  ../../app/controllers/picks_controller.rb[m
+[30m 22 [m[33m# modified: [m[36m  ../../app/models/pick.rb[m
+[30m 23 [m[33m# modified: [m[36m  ../../app/models/player.rb[m
+[30m 24 [m[33m# modified: [m[36m  ../../app/models/team.rb[m
+[30m 25 [m[33m# modified: [m[36m  ../../app/views/layouts/application.html.erb[m
+[30m 26 [m[33m# modified: [m[36m  ../../app/views/picks/index.html.erb[m
+[30m 27 [m[33m# modified: [m[36m  ../../config/environments/test.rb[m
+[30m 28 [m[33m# modified: [m[36m  ../../config/routes.rb[m
+[30m 29 [m[33m# modified: [m[36m  ../../db/development.sqlite3[m
+[30m 30 [m[33m# modified: [m[36m  ../../db/migrate/20100504201307_create_players.rb[m
+[30m 31 [m[33m# modified: [m[36m  ../../db/migrate/20100504201821_create_picks.rb[m
+[30m 32 [m[33m# modified: [m[36m  ../../db/schema.rb[m
+[30m 33 [m[33m# modified: [m[36m  ../../db/test.sqlite3[m
+[30m 34 [m[33m# modified: [m[36m  ../../lib/tasks/import_draft_information.rake[m
+[30m 35 [m[33m# modified: [m[36m  ../../log/development.log[m
+[30m 36 [m[33m# modified: [m[36m  ../../log/test.log[m
+[30m 37 [m[33m# modified: [m[36m  ../../public/stylesheets/application.css[m
+[30m 38 [m[33m#[m
+[30m 39 [m[33m# [m[34mUntracked files:[m[40;103H1,0-1[9CTop[1;5H[40;1H[1m[30m[46m-- INSERT --[m[40;13H[K[40;103H1,1[11CTop[1;5Ha[40;93Ha[1;5H[40;93H [1;5H[1m [m[1m[34mad[m[1m                                                                                                                  [m[2;4H add            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[40;29H[1m[30m[46m The only match[m[2;4H add            [1;7H[1m[34md[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[2;4H add            [1;8H[1m                                                                                                                  [m[2;4H[30m [m[33m# Please enter [m[2;4H add            [1;7H[1m                                                                                                                   [m[2;4H[30m [m[33m# Please enter [m[40;30H[1m[30m[46m-- Searching...[m[40;30H[37m[41mBack at original[m[2;4H and                    [3;4H an                     [4;4H aborts[5;4H add                    [6;4H app[7;4H application_controller[8;4H application            [9;4H authentication         [10;4H autospec[1;6H[1m[34md[m[1m                                                                                                                  [m[2;4H[30m [m[33m# Please enter the comm[m[3;4H[30m [m[33m# with '#' will be igno[m[4;4H[30m [m[33m#[m[4;6H[K[5;4H[30m [m[33m# Committer: James Trow[m[6;4H[30m [m[33m#[m[6;6H[K[7;4H[30m [m[33m# On branch [m[37mmaster[m[7;23H[K[8;4H[30m [m[33m# [m[34mChanges to be committ[m[9;4H[30m [m[33m#   (use "git reset HEA[m[10;4H[30m [m[33m#[m[10;6H[K[2;4H add            [1;7H[1m[34md[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[2;4H add            [1;8H[1m[34me[m[1m                                                                                                                [m[2;4H[30m [m[33m# Please enter [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CTop[40;103H[K[40;103H1,5[11CTop[1;9H[1m[34md[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CTop[40;103H[K[40;103H1,6[11CTop[1;10H[1m[34m [m[1m                                                                                                              [m[40;105H7[1;11Hu[40;93Hu[1;11H[40;93H [1;11H[1m [m[1m[34mun[m[1m                                                                                                            [m[2;10H unstage        [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;10H[33mase enter the co[m[40;29H[1m[30m[46m The only match[m[2;10H unstage        [1;13H[1m                                                                                                             [m[2;10H[33mase enter the co[m[40;30H[1m[30m[46m-- Searching...[m[40;30H[37m[41mBack at original[m[2;10H use              [3;10H unstage          [4;11Huser_spec[5;10H updated          [6;11Hupdate[7;10H users_controller[8;10H users_helper     [9;10H user             [10;11Husers[1;12H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,8[11CTop[1;11H[1m                                                                                                              [m[2;10H[33mase enter the comm[3;10Hh '#' will be igno[m[4;11H[K[5;10H[33mmitter: James Trow[m[6;11H[K[7;10H[33mbranch [m[37mmaster[m[7;23H[K[8;10H[34mnges to be committ[m[9;10H[33muse "git reset HEA[m[10;11H[K[40;103H[K[40;103H1,7[11CTop[1;11H[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CTop[40;103H[K[40;103H1,6[11CTop[1;10H[1m                                                                                                                [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CTop[40;103H[K[40;103H1,5[11CTop[1;9H[1m                                                                                                                 [m[2;4H add            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[40;29H[1m[30m[46m The only match[m[2;4H add            [1;8H[1m                                                                                                                  [m[2;4H[30m [m[33m# Please enter [m[40;30H[1m[30m[46m-- Searching...[m[40;30H[37m[41mBack at original[m[2;4H add            [3;4H ad             [1;7H[1m                                                                                                                   [m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[40;30H[1m[30m[46m-- Searching...[m[40;45H[K[40;30H[37m[41mBack at original[m[2;4H and                    [3;4H an                     [4;4H aborts[5;4H add                    [6;4H app[7;4H application_controller[8;4H application            [9;4H authentication         [10;4H autospec[1;6H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,2[11CTop[1;5H[1m                                                                                                                    [m[2;4H[30m [m[33m# Please enter the comm[m[3;4H[30m [m[33m# with '#' will be igno[m[4;4H[30m [m[33m#[m[4;6H[K[5;4H[30m [m[33m# Committer: James Trow[m[6;4H[30m [m[33m#[m[6;6H[K[7;4H[30m [m[33m# On branch [m[37mmaster[m[7;23H[K[8;4H[30m [m[33m# [m[34mChanges to be committ[m[9;4H[30m [m[33m#   (use "git reset HEA[m[10;4H[30m [m[33m#[m[10;6H[K[40;103H[K[40;103H1,1[11CTop[1;5H[1m[34mf[m[1m                                                                                                                   [m[40;105H2[1;6H[1m[34mi[m[1m                                                                                                                  [m[2;4H file           [3;4H files          [4;4H fixtures[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 3[m[2;4H file           [3;4H files          [4;4H fixtures[1;7H[1m[34mn[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,4[11CTop[40;103H[K[40;103H1,4[11CTop[1;8H[1m[34mi[m[1m                                                                                                                [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CTop[40;103H[K[40;103H1,5[11CTop[1;9H[1m[34ms[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CTop[40;103H[K[40;103H1,6[11CTop[1;10Hh[40;93Hh[1;10H[40;93H [1;10H[1m [m[1m[34mhe[m[1m                                                                                                             [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,8[11CTop[40;103H[K[40;103H1,8[11CTop[1;12H[1m[34md[m[1m                                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,9[11CTop[40;103H[K[40;103H1,9[11CTop[1;13H[1m[34m [m[1m                                                                                                           [m[40;105H10[1;14Hu[40;93Hu[1;14H[40;93H [1;14H[1m [m[1m[34mun[m[1m                                                                                                         [m[2;13H unstage        [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;13H[33m enter the commi[m[40;29H[1m[30m[46m The only match[m[2;13H unstage        [1;16H[1m[34mi[m[1m                                                                                                        [m[2;13H[33m enter the commi[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,13[10CTop[40;103H[K[40;103H1,13[10CTop[1;17H[1m[34mt[m[1m                                                                                                       [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,14[10CTop[40;103H[K[40;103H1,14[10CTop[1;18H[1m[34m [m[1m                                                                                                      [m[40;106H5[1;19H[1m[34mt[m[1m                                                                                                     [m[40;106H6[1;20H[1m[34me[m[1m                                                                                                    [m[2;18H team_spec      [3;18H team           [4;19Htest[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;18H[33mr the commit mes[3;18Hll be ignored, a[m[4;19H[K[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 3[m[2;18H team_spec      [3;18H team           [4;19Htest[1;21H[1m[34ms[m[1m                                                                                                   [m[2;18H[33mr the commit mes[3;18Hll be ignored, a[m[4;19H[K[2;18H test           [1;22H[1m[34mt[m[1m                                                                                                  [m[2;18H[33mr the commit mes[m[2;18H test           [1;23H[1m[34ms[m[1m                                                                                                 [m[2;18H[33mr the commit mes[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,20[10CTop[40;103H[K[40;103H1,20[10CTop[1;24H[1m[34m [m[1m                                                                                                [m[40;106H1[1;25H[1m[34mf[m[1m                                                                                               [m[40;106H2[1;26H[1m[34mo[m[1m                                                                                              [m[2;24H for            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;24H[33mcommit message f[m[40;29H[1m[30m[46m The only match[m[2;24H for            [1;27H[1m[34mr[m[1m                                                                                             [m[2;24H[33mcommit message f[m[2;24H for            [1;28H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,24[10CTop[1;28H[1m[34m [m[1m                                                                                            [m[2;24H[33mcommit message f[m[40;103H[K[40;103H1,25[10CTop[1;29H[1m[34mt[m[1m                                                                                           [m[40;106H6[1;30Hh[40;93Hh[1;30H[40;93H [1;30H[1m [m[1m[34mhe[m[1m                                                                                         [m[2;28H the            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;28H[33mit message for y[m[40;29H[1m[30m[46m The only match[m[2;28H the            [1;32H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,28[10CTop[1;32H[1m[34m [m[1m                                                                                        [m[2;28H[33mit message for y[m[40;103H[K[40;103H1,29[10CTop[1;33H[1m[34mm[m[1m                                                                                       [m[40;105H30[1;34H[1m[34mo[m[1m                                                                                      [m[2;32H modified       [3;32H models         [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;32H[33message for your [3;32H and an empty me[m[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 2[m[2;32H modified       [3;32H models         [1;35H[1m[34md[m[1m                                                                                     [m[2;32H[33message for your [3;32H and an empty me[m[2;32H modified       [3;32H models         [1;36H[1m[34me[m[1m                                                                                    [m[2;32H[33message for your [3;32H and an empty me[m[2;32H models         [1;37H[1m[34ml[m[1m                                                                                   [m[2;32H[33message for your [m[2;32H models         [1;38H[1m[34ms[m[1m                                                                                  [m[2;32H[33message for your [m[2;32H models         [1;39H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,35[10CTop[1;39H[1m[34m,[m[1m                                                                                 [m[2;32H[33message for your [m[40;103H[K[40;103H1,36[10CTop[1;40H[1m[34m [m[1m                                                                                [m[40;106H7[1;41Ha[40;93Ha[1;41H[40;93H [1;41H[1m [m[1m[34ms[m[1m                                                                               [m[40;106H8[1;42H[1m[34mt[m[1m                                                                              [m[2;40H starting       [3;40H stylesheets    [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;40H[33mor your changes.[3;40Hempty message ab[m[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 2[m[2;40H starting       [3;40H stylesheets    [1;43Ha[40;93Ha[1;43H[40;93H [1;43H[1m [m[1m[34ma[m[1m                                                                             [m[2;40H[33mor your changes.[3;40Hempty message ab[m[2;40H starting       [1;44H[1m[34mr[m[1m                                                                            [m[2;40H[33mor your changes.[m[2;40H starting       [1;45H[1m[34mt[m[1m                                                                           [m[2;40H[33mor your changes.[m[2;40H starting       [1;46H[1m[34me[m[1m                                                                          [m[2;40H[33mor your changes.[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,43[10CTop[40;103H[K[40;103H1,43[10CTop[1;47H[1m[34md[m[1m                                                                         [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,44[10CTop[40;103H[K[40;103H1,44[10CTop[1;48H[1m[34m [m[1m                                                                        [m[40;106H5[1;49H[1m[34mw[m[1m                                                                       [m[40;106H6[1;50H[1m[34mo[m[1m                                                                      [m[2;48H working        [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;48H[33mchanges. Lines s[m[40;29H[1m[30m[46m The only match[m[2;48H working        [1;51H[1m[34mr[m[1m                                                                     [m[2;48H[33mchanges. Lines s[m[2;48H working        [1;52H[1m[34mk[m[1m                                                                    [m[2;48H[33mchanges. Lines s[m[2;48H working        [1;53H[1m[34mi[m[1m                                                                   [m[2;48H[33mchanges. Lines s[m[2;48H working        [1;54H[1m[34mn[m[1m                                                                  [m[2;48H[33mchanges. Lines s[m[2;48H working        [1;55H[1mg                                                                 [m[2;48H[33mchanges. Lines s[m[2;48H working        [1;56H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,52[10CTop[2;48H[33mchanges. Lines s[m[40;103H[K[40;103H1,53[10CTop[1;57H[1mo                                                               [m[40;106H4[1;58H[1mn                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,55[10CTop[40;103H[K[40;103H1,55[10CTop[1;59H[40;106H6[1;60H[1mt                                                            [m[40;106H7[1;61Hh[40;93Hh[1;61H[40;93H [1;61H[1m he                                                          [m[2;59H the         [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;59H[33mnes starting[m[40;29H[1m[30m[46m The only match[m[2;59H the         [1;63H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,59[10CTop[2;59H[33mnes starting[m[40;103H[K[40;103H1,60[10CTop[1;64H[1mv                                                        [m[40;106H1[1;65H[1mi                                                       [m[2;63H views   [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;63H[33mstarting[m[40;29H[1m[30m[46m The only match[m[2;63H views   [1;66H[1me                                                      [m[2;63H[33mstarting[m[2;63H views   [1;67H[1mw                                                     [m[2;63H[33mstarting[m[2;63H views   [1;68H[1ms                                                    [m[2;63H[33mstarting[m[2;63H views   [1;69H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,65[10CTop[2;63H[33mstarting[m[40;103H[K[40;103H1,65[10CTop[2;63H views   [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;63H[33mstarting[m[40;29H[1m[30m[46m The only match[m[2;63H views   [1;69H[40;1H[K[1;68H[40;93H^[[1;68H[40;93H  [1;69H[40;1H[1m[30m[46m-- Keyword completion (^N^P) The only match[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,65[10CTop[40;1H[K[2;63H[33mstarting[m[40;103H1,64[10CTop[1;68H[40;93H:[1;68H[40;93H[K[40;1H:w".git/COMMIT_EDITMSG" 62L, 2197C written[1;68H[40;103H1,64[10CTop[40;103H[K[40;103H1,64[10CTop[1;68H[40;93H:[1;68H[40;1H[K[40;1H:q[40;1H[K[40;1H[?1l>[2J[?47l8[master cc7dc7f] finished unit tests for the models, started working on the views
+ 4 files changed, 252 insertions(+), 0 deletions(-)
+ create mode 100644 spec/models/pick_spec.rb
+ create mode 100644 spec/models/player_spec.rb
+ create mode 100644 spec/models/team_spec.rb
+ create mode 100644 spec/models/user_spec.rb
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git push origin master
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 2.23 KiB, done.
+Total 8 (delta 2), reused 0 (delta 0)
+To git@github.com:Mysrt/nfl_draft.git
+   6490579..cc7dc7f  master -> master
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git push origin master[Kspec team_git push origin master[12Pcommit[1Padd .spec pick_spec.rbuser_spec.rbrake db:test:loadspec user_spec.rb[1P[1P[1P[1P[4ht[4l[4he[4l[4ha[4l[4hm[4l
+..
+
+Finished in 0.115276 seconds
+
+2 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+..
+
+Finished in 0.118044 seconds
+
+2 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+..
+
+Finished in 0.116903 seconds
+
+2 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git push origin m             add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../app/controllers/application_controller.rb
+#	modified:   ../../app/controllers/picks_controller.rb
+#	modified:   ../../app/models/pick.rb
+#	modified:   ../../app/models/player.rb
+#	modified:   ../../app/models/team.rb
+#	modified:   ../../app/views/layouts/application.html.erb
+#	modified:   ../../app/views/picks/index.html.erb
+#	modified:   ../../app/views/picks/show.html.erb
+#	modified:   ../../config/environments/test.rb
+#	modified:   ../../config/routes.rb
+#	modified:   ../../db/development.sqlite3
+#	modified:   ../../db/migrate/20100504201307_create_players.rb
+#	modified:   ../../db/migrate/20100504201821_create_picks.rb
+#	modified:   ../../db/schema.rb
+#	modified:   ../../db/test.sqlite3
+#	modified:   ../../lib/tasks/import_draft_information.rake
+#	modified:   ../../log/development.log
+#	modified:   ../../log/test.log
+#	modified:   ../../public/stylesheets/application.css
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../.DS_Store
+#	../../app/controllers/sessions_controller.rb
+#	../../app/controllers/users_controller.rb
+#	../../app/helpers/sessions_helper.rb
+#	../../app/helpers/users_helper.rb
+#	../../app/models/user.rb
+#	../../app/views/picks/home.html.erb
+#	../../app/views/players/_players.html.erb
+#	../../app/views/sessions/
+#	../../app/views/users/
+#	../../db/migrate/20100505175032_create_users.rb
+#	../../lib/authentication.rb
+#	../../lib/tasks/rspec.rake
+#	../../public/csv_files/
+#	../../script/autospec
+#	../../script/spec
+#	../controllers/
+#	../fixtures/
+#	../rcov.opts
+#	../spec.opts
+#	../spec_helper.rb
+#	../../typescript
+no changes added to commit (use "git add" and/or "git commit -a")
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../app/controllers/application_controller.rb
+#	modified:   ../../app/controllers/picks_controller.rb
+#	modified:   ../../app/models/pick.rb
+#	modified:   ../../app/models/player.rb
+#	modified:   ../../app/models/team.rb
+#	modified:   ../../app/views/layouts/application.html.erb
+#	modified:   ../../app/views/picks/index.html.erb
+#	modified:   ../../app/views/picks/show.html.erb
+#	modified:   ../../config/environments/test.rb
+#	modified:   ../../config/routes.rb
+#	modified:   ../../db/development.sqlite3
+#	modified:   ../../db/migrate/20100504201307_create_players.rb
+#	modified:   ../../db/migrate/20100504201821_create_picks.rb
+#	modified:   ../../db/schema.rb
+#	modified:   ../../db/test.sqlite3
+#	modified:   ../../lib/tasks/import_draft_information.rake
+#	modified:   ../../log/development.log
+#	modified:   ../../log/test.log
+#	modified:   ../../public/stylesheets/application.css
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../.DS_Store
+#	../../app/controllers/sessions_controller.rb
+#	../../app/controllers/users_controller.rb
+#	../../app/helpers/sessions_helper.rb
+#	../../app/helpers/users_helper.rb
+#	../../app/models/user.rb
+#	../../app/views/picks/home.html.erb
+#	../../app/views/players/_players.html.erb
+#	../../app/views/sessions/
+#	../../app/views/users/
+#	../../db/migrate/20100505175032_create_users.rb
+#	../../lib/authentication.rb
+#	../../lib/tasks/rspec.rake
+#	../../public/csv_files/
+#	../../script/autospec
+#	../../script/spec
+#	../controllers/
+#	../fixtures/
+#	../rcov.opts
+#	../spec.opts
+#	../spec_helper.rb
+#	../../typescript
+no changes added to commit (use "git add" and/or "git commit -a")
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit -a
+7[?47h[?1h=[1;40r[m[H[2J[40;1H".git/COMMIT_EDITMSG" 55L, 1945C[>c[1;1H[1m[30m  1 [m[1m                                                                                                                    [m[2;1H[30m  2 [m[33m# Please enter the commit message for your changes. Lines starting[m
+[30m  3 [m[33m# with '#' will be ignored, and an empty message aborts the commit.[m
+[30m  4 [m[33m#[m
+[30m  5 [m[33m# Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m
+[30m  6 [m[33m#[m
+[30m  7 [m[33m# On branch [m[37mmaster[m
+[30m  8 [m[33m# [m[34mChanges to be committed:[m
+[30m  9 [m[33m#   (use "git reset HEAD <file>..." to unstage)[m
+[30m 10 [m[33m#[m
+[30m 11 [m[33m# modified: [m[36m  ../../app/controllers/application_controller.rb[m
+[30m 12 [m[33m# modified: [m[36m  ../../app/controllers/picks_controller.rb[m
+[30m 13 [m[33m# modified: [m[36m  ../../app/models/pick.rb[m
+[30m 14 [m[33m# modified: [m[36m  ../../app/models/player.rb[m
+[30m 15 [m[33m# modified: [m[36m  ../../app/models/team.rb[m
+[30m 16 [m[33m# modified: [m[36m  ../../app/views/layouts/application.html.erb[m
+[30m 17 [m[33m# modified: [m[36m  ../../app/views/picks/index.html.erb[m
+[30m 18 [m[33m# modified: [m[36m  ../../app/views/picks/show.html.erb[m
+[30m 19 [m[33m# modified: [m[36m  ../../config/environments/test.rb[m
+[30m 20 [m[33m# modified: [m[36m  ../../config/routes.rb[m
+[30m 21 [m[33m# modified: [m[36m  ../../db/development.sqlite3[m
+[30m 22 [m[33m# modified: [m[36m  ../../db/migrate/20100504201307_create_players.rb[m
+[30m 23 [m[33m# modified: [m[36m  ../../db/migrate/20100504201821_create_picks.rb[m
+[30m 24 [m[33m# modified: [m[36m  ../../db/schema.rb[m
+[30m 25 [m[33m# modified: [m[36m  ../../db/test.sqlite3[m
+[30m 26 [m[33m# modified: [m[36m  ../../lib/tasks/import_draft_information.rake[m
+[30m 27 [m[33m# modified: [m[36m  ../../log/development.log[m
+[30m 28 [m[33m# modified: [m[36m  ../../log/test.log[m
+[30m 29 [m[33m# modified: [m[36m  ../../public/stylesheets/application.css[m
+[30m 30 [m[33m#[m
+[30m 31 [m[33m# [m[34mUntracked files:[m
+[30m 32 [m[33m#   (use "git add <file>..." to include in what will be committed)[m
+[30m 33 [m[33m#[m
+[30m 34 [m[33m# [m[36m../../.DS_Store[m
+[30m 35 [m[33m# [m[36m../../app/controllers/sessions_controller.rb[m
+[30m 36 [m[33m# [m[36m../../app/controllers/users_controller.rb[m
+[30m 37 [m[33m# [m[36m../../app/helpers/sessions_helper.rb[m
+[30m 38 [m[33m# [m[36m../../app/helpers/users_helper.rb[m
+[30m 39 [m[33m# [m[36m../../app/models/user.rb[m[40;103H1,0-1[9CTop[1;5H[40;1H[1m[30m[46m-- INSERT --[m[40;13H[K[40;103H1,1[11CTop[1;5Ha[40;93Ha[1;5H[40;93H [1;5H[1m [m[1m[34ma[m[1m                                                                                                                   [m[40;105H2[1;6H[1m                                                                                                                    [m[40;105H1[1;5Ha[40;93Ha[1;5H[40;93H [1;5H[1m [m[1m[34mad[m[1m                                                                                                                  [m[2;4H add            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[40;29H[1m[30m[46m The only match[m[2;4H add            [1;7H[1m[34md[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[2;4H add            [1;8H[1m[34me[m[1m                                                                                                                [m[2;4H[30m [m[33m# Please enter [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CTop[40;103H[K[40;103H1,5[11CTop[1;9H[1m[34md[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CTop[40;103H[K[40;103H1,6[11CTop[1;10H[1m[34m [m[1m                                                                                                              [m[40;105H7[1;11H[1m[34mt[m[1m                                                                                                             [m[40;105H8[1;12Hh[40;93Hh[1;12H[40;93H [1;12H[1m [m[1m[34mhe[m[1m                                                                                                           [m[2;10H the            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;10H[33mase enter the co[m[40;29H[1m[30m[46m The only match[m[2;10H the            [1;14H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,10[10CTop[1;14H[1m[34m [m[1m                                                                                                          [m[2;10H[33mase enter the co[m[40;103H[K[40;103H1,11[10CTop[1;15H[1m[34mv[m[1m                                                                                                         [m[40;106H2[1;16H[1m[34mi[m[1m                                                                                                        [m[2;14H views          [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;14H[33menter the commit[m[40;29H[1m[30m[46m The only match[m[2;14H views          [1;17H[1m[34me[m[1m                                                                                                       [m[2;14H[33menter the commit[m[2;14H views          [1;18H[1m[34mw[m[1m                                                                                                      [m[2;14H[33menter the commit[m[2;14H views          [1;19H[1m[34ms[m[1m                                                                                                     [m[2;14H[33menter the commit[m[2;14H views          [1;20H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,16[10CTop[1;20H[1m[34m [m[1m                                                                                                    [m[2;14H[33menter the commit[m[40;103H[K[40;103H1,17[10CTop[1;21H[1m[34mf[m[1m                                                                                                   [m[40;106H8[1;22H[1m[34mo[m[1m                                                                                                  [m[2;20H for            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;20H[33mthe commit messa[m[40;29H[1m[30m[46m The only match[m[2;20H for            [1;23H[1m[34mr[m[1m                                                                                                 [m[2;20H[33mthe commit messa[m[2;20H for            [1;24H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,20[10CTop[1;24H[1m[34m [m[1m                                                                                                [m[2;20H[33mthe commit messa[m[40;103H[K[40;103H1,21[10CTop[1;25H[1m[34md[m[1m                                                                                               [m[40;106H2[1;26H[1m[34mr[m[1m                                                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,23[10CTop[40;103H[K[40;103H1,23[10CTop[1;27Ha[40;93Ha[1;27H[40;93H [1;27H[1m [m[1m[34maf[m[1m                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,25[10CTop[40;103H[K[40;103H1,25[10CTop[1;29H[1m[34mt[m[1m                                                                                           [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,26[10CTop[40;103H[K[40;103H1,26[10CTop[1;30H[1m[34mi[m[1m                                                                                          [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,27[10CTop[40;103H[K[40;103H1,27[10CTop[1;31H[1m[34mn[m[1m                                                                                         [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,28[10CTop[40;103H[K[40;103H1,28[10CTop[1;32H[1m[34mg[m[1m                                                                                        [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,29[10CTop[40;103H[K[40;103H1,29[10CTop[1;33H[1m[34m [m[1m                                                                                       [m[40;105H30[1;34H[1m[34mp[m[1m                                                                                      [m[40;106H1[1;35H[1m[34ml[m[1m                                                                                     [m[2;33H player         [3;33H players        [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;33H[33mssage for your c[3;33Hand an empty mes[m[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 2[m[2;33H player         [3;33H players        [1;36Ha[40;93Ha[1;36H[40;93H [1;36H[1m [m[1m[34ma[m[1m                                                                                    [m[2;33H[33mssage for your c[3;33Hand an empty mes[m[2;33H player         [3;33H players        [1;37H[1m[34my[m[1m                                                                                   [m[2;33H[33mssage for your c[3;33Hand an empty mes[m[2;33H player         [3;33H players        [1;38H[1m[34me[m[1m                                                                                  [m[2;33H[33mssage for your c[3;33Hand an empty mes[m[2;33H player         [3;33H players        [1;39H[1m[34mr[m[1m                                                                                 [m[2;33H[33mssage for your c[3;33Hand an empty mes[m[2;33H player         [3;33H players        [1;40H[1m[34ms[m[1m                                                                                [m[2;33H[33mssage for your c[3;33Hand an empty mes[m[2;33H players        [1;41H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,37[10CTop[1;41H[1m[34m,[m[1m                                                                               [m[2;33H[33mssage for your c[m[40;103H[K[40;103H1,38[10CTop[1;42H[1m                                                                                [m[2;33H players        [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;33H[33mssage for your c[m[40;29H[1m[30m[46m The only match[m[2;33H players        [1;41H[40;1H[K[1;40H[40;93H^[[1;40H[40;93H  [1;41H[40;1H[1m[30m[46m-- Keyword completion (^N^P) The only match[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,37[10CTop[40;1H[K[2;33H[33mssage for your c[m[40;103H1,36[10CTop[1;40H[40;93H:[1;40H[40;93H[K[40;1H:w".git/COMMIT_EDITMSG" 55L, 1981C written[1;40H[40;103H1,36[10CTop[40;103H[K[40;103H1,36[10CTop[1;40H[40;93H:[1;40H[40;1H[K[40;1H:q[40;1H[K[40;1H[?1l>[2J[?47l8[master 20637a7] added the views for drafting players
+ 19 files changed, 13652 insertions(+), 36 deletions(-)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git push origin master
+Counting objects: 71, done.
+Delta compression using up to 2 threads.
+Compressing objects:   3% (1/33)   Compressing objects:   6% (2/33)   Compressing objects:   9% (3/33)   Compressing objects:  12% (4/33)   Compressing objects:  15% (5/33)   Compressing objects:  18% (6/33)   Compressing objects:  21% (7/33)   Compressing objects:  24% (8/33)   Compressing objects:  27% (9/33)   Compressing objects:  30% (10/33)   Compressing objects:  33% (11/33)   Compressing objects:  36% (12/33)   Compressing objects:  39% (13/33)   Compressing objects:  42% (14/33)   Compressing objects:  45% (15/33)   Compressing objects:  48% (16/33)   Compressing objects:  51% (17/33)   Compressing objects:  54% (18/33)   Compressing objects:  57% (19/33)   Compressing objects:  60% (20/33)   Compressing objects:  63% (21/33)   Compressing objects:  66% (22/33)   Compressing objects:  69% (23/33)   Compressing objects:  72% (24/33)   Compressing objects:  75% (25/33)   Compressing objects:  78% (26/33)   Compressing objects:  81% (27/33)   Compressing objects:  84% (28/33)   Compressing objects:  87% (29/33)   Compressing objects:  90% (30/33)   Compressing objects:  93% (31/33)   Compressing objects:  96% (32/33)   Compressing objects: 100% (33/33)   Compressing objects: 100% (33/33), done.
+Writing objects:   2% (1/36)   Writing objects:   5% (2/36)   Writing objects:   8% (3/36)   Writing objects:  11% (4/36)   Writing objects:  13% (5/36)   Writing objects:  16% (6/36)   Writing objects:  19% (7/36)   Writing objects:  22% (8/36)   Writing objects:  25% (9/36)   Writing objects:  27% (10/36)   Writing objects:  30% (11/36)   Writing objects:  33% (12/36)   Writing objects:  36% (13/36)   Writing objects:  38% (14/36)   Writing objects:  41% (15/36)   Writing objects:  44% (16/36)   Writing objects:  47% (17/36)   Writing objects:  50% (18/36)   Writing objects:  52% (19/36)   Writing objects:  55% (20/36)   Writing objects:  58% (21/36)   Writing objects:  61% (22/36)   Writing objects:  63% (23/36)   Writing objects:  66% (24/36)   Writing objects:  69% (25/36)   Writing objects:  72% (26/36)   Writing objects:  75% (27/36)   Writing objects:  77% (28/36)   Writing objects:  80% (29/36)   Writing objects:  83% (30/36)   Writing objects:  86% (31/36)   Writing objects:  88% (32/36)   Writing objects:  91% (33/36)   Writing objects:  94% (34/36)   Writing objects:  97% (35/36)   Writing objects: 100% (36/36)   Writing objects: 100% (36/36), 76.88 KiB, done.
+Total 36 (delta 21), reused 0 (delta 0)
+To git@github.com:Mysrt/nfl_draft.git
+   cc7dc7f..20637a7  master -> master
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateUsers: reverting ====================================================
+-- drop_table(:users)
+   -> 0.0009s
+==  CreateUsers: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: reverting ====================================================
+-- drop_table(:picks)
+   -> 0.0012s
+==  CreatePicks: reverted (0.0016s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateTeams: reverting ====================================================
+-- drop_table(:teams)
+   -> 0.0007s
+==  CreateTeams: reverted (0.0008s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: reverting ==================================================
+-- drop_table(:players)
+   -> 0.0011s
+==  CreatePlayers: reverted (0.0013s) =========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: migrating ==================================================
+-- create_table(:players)
+   -> 0.0083s
+==  CreatePlayers: migrated (0.0084s) =========================================
+
+==  CreateTeams: migrating ====================================================
+-- create_table(:teams)
+   -> 0.0019s
+==  CreateTeams: migrated (0.0020s) ===========================================
+
+==  CreatePicks: migrating ====================================================
+-- create_table(:picks)
+   -> 0.0016s
+==  CreatePicks: migrated (0.0017s) ===========================================
+
+==  CreateUsers: migrating ====================================================
+-- create_table(:users)
+   -> 0.0018s
+==  CreateUsers: migrated (0.0019s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:m draft_players
+(in /Users/jamestrowbridge/dev/nfl_draft)
+rake aborted!
+Don't know how to build task 'db:draft_players'
+
+(See full trace by running task with --trace)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_players                -D
+(in /Users/jamestrowbridge/dev/nfl_draft)
+rake db:abort_if_pending_migrations
+    Raises an error if there are pending migrations
+
+rake db:charset
+    Retrieves the charset for the current environment's database
+
+rake db:collation
+    Retrieves the collation for the current environment's database
+
+rake db:create
+    Create the database defined in config/database.yml for the current RAILS_ENV
+
+rake db:create:all
+    Create all the local databases defined in config/database.yml
+
+rake db:draft_information
+    Load Players, Draft Order, and teams from csv file
+
+rake db:drop
+    Drops the database for the current RAILS_ENV
+
+rake db:drop:all
+    Drops all the local databases defined in config/database.yml
+
+rake db:fixtures:identify
+    Search for a fixture given a LABEL or ID. Specify an alternative path (eg. spec/fixtures) using FIXTURES_PATH=spec/fixtures.
+
+rake db:fixtures:load
+    Load fixtures into the current environment's database.  Load specific fixtures using FIXTURES=x,y. Load from subdirectory in test/fixtures using FIXTURES_DIR=z. Specify an alternative path (eg. spec/fixtures) using FIXTURES_PATH=spec/fixtures.
+
+rake db:migrate
+    Migrate the database through scripts in db/migrate and update db/schema.rb by invoking db:schema:dump. Target specific version with VERSION=x. Turn off output with VERBOSE=false.
+
+rake db:migrate:down
+    Runs the "down" for a given migration VERSION.
+
+rake db:migrate:redo
+    Rollbacks the database one migration and re migrate up. If you want to rollback more than one step, define STEP=x. Target specific version with VERSION=x.
+
+rake db:migrate:reset
+    Resets your database using your migrations for the current environment
+
+rake db:migrate:up
+    Runs the "up" for a given migration VERSION.
+
+rake db:reset
+    Drops and recreates the database from db/schema.rb for the current environment and loads the seeds.
+
+rake db:rollback
+    Rolls the schema back to the previous version. Specify the number of steps with STEP=n
+
+rake db:schema:dump
+    Create a db/schema.rb file that can be portably used against any DB supported by AR
+
+rake db:schema:load
+    Load a schema.rb file into the database
+
+rake db:seed
+    Load the seed data from db/seeds.rb
+
+rake db:sessions:clear
+    Clear the sessions table
+
+rake db:sessions:create
+    Creates a sessions migration for use with ActiveRecord::SessionStore
+
+rake db:setup
+    Create the database, load the schema, and initialize with the seed data
+
+rake db:structure:dump
+    Dump the database structure to a SQL file
+
+rake db:test:clone
+    Recreate the test database from the current environment's database schema
+
+rake db:test:clone_structure
+    Recreate the test databases from the development structure
+
+rake db:test:load
+    Recreate the test database from the current schema.rb
+
+rake db:test:prepare
+    Check for pending migrations and load the test schema
+
+rake db:test:purge
+    Empty the test database
+
+rake db:version
+    Retrieves the current schema version number
+
+rake doc:app
+    Build the RDOC HTML Files
+
+rake doc:clobber_app
+    Remove rdoc products
+
+rake doc:clobber_plugins
+    Remove plugin documentation
+
+rake doc:clobber_rails
+    Remove rdoc products
+
+rake doc:guides
+    Generate Rails guides
+
+rake doc:plugins
+    Generate documentation for all installed plugins
+
+rake doc:rails
+    Build the RDOC HTML Files
+
+rake doc:reapp
+    Force a rebuild of the RDOC files
+
+rake doc:rerails
+    Force a rebuild of the RDOC files
+
+rake gems
+    List the gems that this rails application depends on
+
+rake gems:build
+    Build any native extensions for unpacked gems
+
+rake gems:build:force
+    Force the build of all gems
+
+rake gems:install
+    Installs all required gems.
+
+rake gems:refresh_specs
+    Regenerate gem specifications in correct format.
+
+rake gems:unpack
+    Unpacks all required gems into vendor/gems.
+
+rake gems:unpack:dependencies
+    Unpacks all required gems and their dependencies into vendor/gems.
+
+rake log:clear
+    Truncates all *.log files in log/ to zero bytes
+
+rake middleware
+    Prints out your Rack middleware stack
+
+rake notes
+    Enumerate all annotations
+
+rake notes:custom
+    Enumerate a custom annotation, specify with ANNOTATION=WTFHAX
+
+rake notes:fixme
+    Enumerate all FIXME annotations
+
+rake notes:optimize
+    Enumerate all OPTIMIZE annotations
+
+rake notes:todo
+    Enumerate all TODO annotations
+
+rake rails:freeze:edge
+    Lock to latest Edge Rails, for a specific release use RELEASE=1.2.0
+
+rake rails:freeze:gems
+    Lock this application to the current gems (by unpacking them into vendor/rails)
+
+rake rails:template
+    Applies the template supplied by LOCATION=/path/to/template
+
+rake rails:unfreeze
+    Unlock this application from freeze of gems or edge and return to a fluid use of system gems
+
+rake rails:update
+    Update both configs, scripts and public/javascripts from Rails
+
+rake rails:update:application_controller
+    Rename application.rb to application_controller.rb
+
+rake rails:update:configs
+    Update config/boot.rb from your current rails install
+
+rake rails:update:generate_dispatchers
+    Generate dispatcher files in RAILS_ROOT/public
+
+rake rails:update:javascripts
+    Update your javascripts from your current rails install
+
+rake rails:update:scripts
+    Add new scripts to the application script/ directory
+
+rake routes
+    Print out all defined routes in match order, with names. Target specific controller with CONTROLLER=x.
+
+rake secret
+    Generate a crytographically secure secret key. This is typically used to generate a secret for cookie sessions.
+
+rake spec
+    Run all specs in spec directory (excluding plugin specs)
+
+rake spec:clobber_rcov
+    Remove rcov products for rcov
+
+rake spec:controllers
+    Run the code examples in spec/controllers
+
+rake spec:db:fixtures:load
+    Load fixtures (from spec/fixtures) into the current environment's database.  Load specific fixtures using FIXTURES=x,y. Load from subdirectory in test/fixtures using FIXTURES_DIR=z.
+
+rake spec:doc
+    Print Specdoc for all specs (excluding plugin specs)
+
+rake spec:helpers
+    Run the code examples in spec/helpers
+
+rake spec:integration
+    Run the code examples in spec/integration
+
+rake spec:lib
+    Run the code examples in spec/lib
+
+rake spec:models
+    Run the code examples in spec/models
+
+rake spec:plugin_doc
+    Print Specdoc for all plugin examples
+
+rake spec:plugins
+    Run the code examples in vendor/plugins (except RSpec's own)
+
+rake spec:plugins:rspec_on_rails
+    Runs the examples for rspec_on_rails
+
+rake spec:rcov
+    Run all specs in spec directory with RCov (excluding plugin specs)
+
+rake spec:views
+    Run the code examples in spec/views
+
+rake stats
+    Report code statistics (KLOCs, etc) from the application
+
+rake test
+    Run all unit, functional and integration tests
+
+rake test:benchmark
+    Run tests for benchmarkdb:test:prepare / Benchmark the performance tests
+
+rake test:functionals
+    Run tests for functionalsdb:test:prepare / Run the functional tests in test/functional
+
+rake test:integration
+    Run tests for integrationdb:test:prepare / Run the integration tests in test/integration
+
+rake test:plugins
+    Run tests for pluginsenvironment / Run the plugin tests in vendor/plugins/*/**/test (or specify with PLUGIN=name)
+
+rake test:profile
+    Run tests for profiledb:test:prepare / Profile the performance tests
+
+rake test:recent
+    Run tests for recentdb:test:prepare / Test recent changes
+
+rake test:uncommitted
+    Run tests for uncommitteddb:test:prepare / Test changes since last checkin (only Subversion and Git)
+
+rake test:units
+    Run tests for unitsdb:test:prepare / Run the unit tests in test/unit
+
+rake time:zones:all
+    Displays names of all time zones recognized by the Rails TimeZone class, grouped by offset. Results can be filtered with optional OFFSET parameter, e.g., OFFSET=-6
+
+rake time:zones:local
+    Displays names of time zones recognized by the Rails TimeZone class with the same offset as the system local time
+
+rake time:zones:us
+    Displays names of US time zones recognized by the Rails TimeZone class, grouped by offset. Results can be filtered with optional OFFSET parameter, e.g., OFFSET=-6
+
+rake tmp:cache:clear
+    Clears all files and directories in tmp/cache
+
+rake tmp:clear
+    Clear session, cache, and socket files from tmp/
+
+rake tmp:create
+    Creates tmp directories for sessions, cache, sockets, and pids
+
+rake tmp:pids:clear
+    Clears all files in tmp/pids
+
+rake tmp:sessions:clear
+    Clears all files in tmp/sessions
+
+rake tmp:sockets:clear
+    Clears all files in tmp/sockets
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake -Ddb:draft_players       information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../db/development.sqlite3
+#	modified:   ../../db/schema.rb
+#	modified:   ../../log/development.log
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../.DS_Store
+#	../../app/controllers/sessions_controller.rb
+#	../../app/controllers/users_controller.rb
+#	../../app/helpers/sessions_helper.rb
+#	../../app/helpers/users_helper.rb
+#	../../app/models/user.rb
+#	../../app/views/picks/home.html.erb
+#	../../app/views/players/_players.html.erb
+#	../../app/views/sessions/
+#	../../app/views/users/
+#	../../db/migrate/20100505175032_create_users.rb
+#	../../lib/authentication.rb
+#	../../lib/tasks/rspec.rake
+#	../../public/csv_files/
+#	../../script/autospec
+#	../../script/spec
+#	../controllers/
+#	../fixtures/
+#	../rcov.opts
+#	../spec.opts
+#	../spec_helper.rb
+#	../../typescript
+no changes added to commit (use "git add" and/or "git commit -a")
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit -a
+7[?47h[?1h=[1;40r[m[H[2J[40;1H".git/COMMIT_EDITMSG" 39L, 1153C[>c[1;1H[1m[30m  1 [m[1m                                                                                                                    [m[2;1H[30m  2 [m[33m# Please enter the commit message for your changes. Lines starting[m
+[30m  3 [m[33m# with '#' will be ignored, and an empty message aborts the commit.[m
+[30m  4 [m[33m#[m
+[30m  5 [m[33m# Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m
+[30m  6 [m[33m#[m
+[30m  7 [m[33m# On branch [m[37mmaster[m
+[30m  8 [m[33m# [m[34mChanges to be committed:[m
+[30m  9 [m[33m#   (use "git reset HEAD <file>..." to unstage)[m
+[30m 10 [m[33m#[m
+[30m 11 [m[33m# modified: [m[36m  ../../db/development.sqlite3[m
+[30m 12 [m[33m# modified: [m[36m  ../../db/schema.rb[m
+[30m 13 [m[33m# modified: [m[36m  ../../log/development.log[m
+[30m 14 [m[33m#[m
+[30m 15 [m[33m# [m[34mUntracked files:[m
+[30m 16 [m[33m#   (use "git add <file>..." to include in what will be committed)[m
+[30m 17 [m[33m#[m
+[30m 18 [m[33m# [m[36m../../.DS_Store[m
+[30m 19 [m[33m# [m[36m../../app/controllers/sessions_controller.rb[m
+[30m 20 [m[33m# [m[36m../../app/controllers/users_controller.rb[m
+[30m 21 [m[33m# [m[36m../../app/helpers/sessions_helper.rb[m
+[30m 22 [m[33m# [m[36m../../app/helpers/users_helper.rb[m
+[30m 23 [m[33m# [m[36m../../app/models/user.rb[m
+[30m 24 [m[33m# [m[36m../../app/views/picks/home.html.erb[m
+[30m 25 [m[33m# [m[36m../../app/views/players/_players.html.erb[m
+[30m 26 [m[33m# [m[36m../../app/views/sessions/[m
+[30m 27 [m[33m# [m[36m../../app/views/users/[m
+[30m 28 [m[33m# [m[36m../../db/migrate/20100505175032_create_users.rb[m
+[30m 29 [m[33m# [m[36m../../lib/authentication.rb[m
+[30m 30 [m[33m# [m[36m../../lib/tasks/rspec.rake[m
+[30m 31 [m[33m# [m[36m../../public/csv_files/[m
+[30m 32 [m[33m# [m[36m../../script/autospec[m
+[30m 33 [m[33m# [m[36m../../script/spec[m
+[30m 34 [m[33m# [m[36m../controllers/[m
+[30m 35 [m[33m# [m[36m../fixtures/[m
+[30m 36 [m[33m# [m[36m../rcov.opts[m
+[30m 37 [m[33m# [m[36m../spec.opts[m
+[30m 38 [m[33m# [m[36m../spec_helper.rb[m
+[30m 39 [m[33m# [m[36m../../typescript[m[40;103H1,0-1[9CAll[1;5H[40;93Hf[1;5H[40;94Hi[1;5H[40;93H  [1;5H[40;1H[1m[30m[46m-- INSERT --[m[40;13H[K[40;103H1,1[11CAll[1;5H[1m[34mf[m[1m                                                                                                                   [m[40;105H2[1;6H[1m[34mi[m[1m                                                                                                                  [m[2;4H file           [3;4H files          [4;4H fixtures[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 3[m[2;4H file           [3;4H files          [4;4H fixtures[1;7H[1m[34mx[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[2;4H fixtures       [1;8H[1m[34me[m[1m                                                                                                                [m[2;4H[30m [m[33m# Please enter [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CAll[40;103H[K[40;103H1,5[11CAll[1;9H[1m[34md[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CAll[40;103H[K[40;103H1,6[11CAll[1;10H[1m[34m [m[1m                                                                                                              [m[40;105H7[1;11H[1m[34ms[m[1m                                                                                                             [m[40;105H8[1;12H[1m[34mo[m[1m                                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,9[11CAll[40;103H[K[40;103H1,9[11CAll[1;13H[1m[34mm[m[1m                                                                                                           [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,10[10CAll[40;103H[K[40;103H1,10[10CAll[1;14H[1m[34me[m[1m                                                                                                          [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,11[10CAll[40;103H[K[40;103H1,11[10CAll[1;15H[1m[34m [m[1m                                                                                                         [m[40;106H2[1;16H[1m[34mv[m[1m                                                                                                        [m[40;106H3[1;17H[1m[34mi[m[1m                                                                                                       [m[2;15H views          [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;15H[33mnter the commit [m[40;29H[1m[30m[46m The only match[m[2;15H views          [1;18H[1m[34me[m[1m                                                                                                      [m[2;15H[33mnter the commit [m[2;15H views          [1;19H[1m[34mw[m[1m                                                                                                     [m[2;15H[33mnter the commit [m[2;15H views          [1;20H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,16[10CAll[1;20H[1m[34m [m[1m                                                                                                    [m[2;15H[33mnter the commit [m[40;103H[K[40;103H1,17[10CAll[1;21H[1m[34mp[m[1m                                                                                                   [m[40;106H8[1;22H[1m[34mr[m[1m                                                                                                  [m[2;20H pro            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;20H[33mthe commit messa[m[40;29H[1m[30m[46m The only match[m[2;20H pro            [1;23H[1m[34mo[m[1m                                                                                                 [m[2;20H[33mthe commit messa[m[2;20H pro            [1;24H[1m[34mb[m[1m                                                                                                [m[2;20H[33mthe commit messa[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,21[10CAll[40;103H[K[40;103H1,21[10CAll[1;25H[1m[34ml[m[1m                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,22[10CAll[40;103H[K[40;103H1,22[10CAll[1;26H[1m[34me[m[1m                                                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,23[10CAll[40;103H[K[40;103H1,23[10CAll[1;27H[1m[34mm[m[1m                                                                                             [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,24[10CAll[40;103H[K[40;103H1,24[10CAll[1;28H[1m[34ms[m[1m                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,25[10CAll[40;103H[K[40;103H1,25[10CAll[1;29H[30m  1 [m[34mfixed some view problems[m[1;29H[K[2;1H[1m[30m  2 [m[1m                                                                                                                    [m[3;7H[33mPlease enter the commit message for your changes. Lines starting[m[3;71H[K[4;6H[33m with '#' will be ignored, and an empty message aborts the commit.[m[5;6H[K[6;6H[33m Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m[7;6H[K[8;7H[33mOn branch [m[37mmaster[m[8;23H[K[9;7H[34mChanges to be committed:[m[9;31H[K[10;6H[33m   (use "git reset HEAD <file>..." to unstage)[m[11;6H[K[12;28H[36mdevelopment.sqlite3[13;25Hdb/schema.rb[m[13;37H[K[14;6H[33m modified: [m[36m  ../../log/development.log[m[15;6H[K[16;7H[34mUntracked files:[m[16;23H[K[17;6H[33m   (use "git add <file>..." to include in what will be committed)[m[18;6H[K[19;13H[36m.DS_Store[m[19;22H[K[20;29H[36msessions_controller.rb[21;17Hcontrollers/users_controller.rb[22;25Hsessions_helper.rb[23;17Hhelpers/users_helper.rb[24;17Hmodels/user.rb[m[24;31H[K[25;24H[36micks/home.html.erb[m[25;42H[K[26;23H[36mplayers/_players.html.erb[27;23Hsessions/[28;13Happ/views/users/[m[28;29H[K[29;13H[36mdb/migrate/20100505175032_create_users.rb[30;17Hauthentication.rb[31;13Hlib/tasks/rspec.rake[32;13Hpublic/csv_files/[33;20Hautospec[34;10H../script/spec[35;10Hcontrollers/[36;10Hfixtures/[37;10Hrcov[38;14H.opts[m[38;19H[K[39;10H[36mspec_helper.rb[m[40;103H2,1 [10CTop[2;5H[40;1H[K[2;5H[40;93H^[[2;5H[40;93H  [2;5H[40;103H2,0-1[9CTop[2;5

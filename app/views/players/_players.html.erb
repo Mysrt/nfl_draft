@@ -1,0 +1,6 @@
+<% Player.undrafted.each do |player| %>
+	<li><%= player.name %>
+	<%= player.position %>
+	<%= link_to 'Draft Player', draft_player_path(player) %></li>
+
+<% end %>
