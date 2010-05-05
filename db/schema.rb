@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(:version => 20100505175032) do
     t.string   "name"
     t.string   "position"
     t.boolean  "drafted",    :default => false, :null => false
-    t.integer  "pick"
     t.integer  "team_id"
     t.integer  "pick_id"
     t.datetime "created_at"
