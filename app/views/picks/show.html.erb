@@ -1,12 +1,24 @@
-<% title "Picks" %>
+<% title "Pick" %>
 
 <p>
-  <strong>Name:</strong>
-  <%=h @picks.name %>
+  <strong>Round:</strong>
+  <%=h @pick.round %>
+</p>
+<p>
+  <strong>Pick Number:</strong>
+  <%=h @pick.pick_number %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%=h @pick.team_id %>
+</p>
+<p>
+  <strong>Player:</strong>
+  <%=h @pick.player_id %>
 </p>
 
 <p>
-  <%= link_to "Edit", edit_picks_path(@picks) %> |
-  <%= link_to "Destroy", @picks, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Edit", edit_pick_path(@pick) %> |
+  <%= link_to "Destroy", @pick, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", picks_path %>
 </p>

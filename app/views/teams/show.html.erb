@@ -1,12 +1,24 @@
-<% title "Teams" %>
+<% title "Team" %>
 
 <p>
   <strong>Name:</strong>
-  <%=h @teams.name %>
+  <%=h @team.name %>
+</p>
+<p>
+  <strong>Division:</strong>
+  <%=h @team.division %>
+</p>
+<p>
+  <strong>Player:</strong>
+  <%=h @team.player_id %>
+</p>
+<p>
+  <strong>Pick:</strong>
+  <%=h @team.pick_id %>
 </p>
 
 <p>
-  <%= link_to "Edit", edit_teams_path(@teams) %> |
-  <%= link_to "Destroy", @teams, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Edit", edit_team_path(@team) %> |
+  <%= link_to "Destroy", @team, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", teams_path %>
 </p>

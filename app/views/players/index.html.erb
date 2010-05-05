@@ -3,15 +3,25 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Position</th>
+    <th>Drafted</th>
+    <th>Pick</th>
+    <th>Team</th>
+    <th>Pick</th>
   </tr>
-  <% for players in @players %>
+  <% for player in @players %>
     <tr>
-      <td><%=h players.name %></td>
-      <td><%= link_to "Show", players %></td>
-      <td><%= link_to "Edit", edit_players_path(players) %></td>
-      <td><%= link_to "Destroy", players, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%=h player.name %></td>
+      <td><%=h player.position %></td>
+      <td><%=h player.drafted %></td>
+      <td><%=h player.pick %></td>
+      <td><%=h player.team_id %></td>
+      <td><%=h player.pick_id %></td>
+      <td><%= link_to "Show", player %></td>
+      <td><%= link_to "Edit", edit_player_path(player) %></td>
+      <td><%= link_to "Destroy", player, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Players", new_players_path %></p>
+<p><%= link_to "New Player", new_player_path %></p>

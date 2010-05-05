@@ -7,7 +7,7 @@ class TeamsControllerTest < ActionController::TestCase
   end
   
   def test_show
-    get :show, :id => Teams.first
+    get :show, :id => Team.first
     assert_template 'show'
   end
   
@@ -17,38 +17,38 @@ class TeamsControllerTest < ActionController::TestCase
   end
   
   def test_create_invalid
-    Teams.any_instance.stubs(:valid?).returns(false)
+    Team.any_instance.stubs(:valid?).returns(false)
     post :create
     assert_template 'new'
   end
   
   def test_create_valid
-    Teams.any_instance.stubs(:valid?).returns(true)
+    Team.any_instance.stubs(:valid?).returns(true)
     post :create
-    assert_redirected_to teams_url(assigns(:teams))
+    assert_redirected_to team_url(assigns(:team))
   end
   
   def test_edit
-    get :edit, :id => Teams.first
+    get :edit, :id => Team.first
     assert_template 'edit'
   end
   
   def test_update_invalid
-    Teams.any_instance.stubs(:valid?).returns(false)
-    put :update, :id => Teams.first
+    Team.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Team.first
     assert_template 'edit'
   end
   
   def test_update_valid
-    Teams.any_instance.stubs(:valid?).returns(true)
-    put :update, :id => Teams.first
-    assert_redirected_to teams_url(assigns(:teams))
+    Team.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Team.first
+    assert_redirected_to team_url(assigns(:team))
   end
   
   def test_destroy
-    teams = Teams.first
-    delete :destroy, :id => teams
+    team = Team.first
+    delete :destroy, :id => team
     assert_redirected_to teams_url
-    assert !Teams.exists?(teams.id)
+    assert !Team.exists?(team.id)
   end
 end

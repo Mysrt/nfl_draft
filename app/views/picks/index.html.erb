@@ -1,17 +1,13 @@
 <% title "Picks" %>
+  <% @picks.each do |pick| %>
+	<h1>
+		<%= pick.round %>
+		<%= pick.pick_number %>
+		<%= pick.team.name %>
+		<%= link_to "Show", pick %>
+		<%= link_to "Edit", edit_pick_path(pick) %>
+		<%= link_to "Destroy", pick, :confirm => 'Are you sure?', :method => :delete %>
+	</h1>
+<% end %>
 
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-  <% for picks in @picks %>
-    <tr>
-      <td><%=h picks.name %></td>
-      <td><%= link_to "Show", picks %></td>
-      <td><%= link_to "Edit", edit_picks_path(picks) %></td>
-      <td><%= link_to "Destroy", picks, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Picks", new_picks_path %></p>
+<p><%= link_to "New Pick", new_pick_path %></p>

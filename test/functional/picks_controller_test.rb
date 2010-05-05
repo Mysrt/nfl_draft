@@ -7,7 +7,7 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_show
-    get :show, :id => Picks.first
+    get :show, :id => Pick.first
     assert_template 'show'
   end
   
@@ -17,38 +17,38 @@ class PicksControllerTest < ActionController::TestCase
   end
   
   def test_create_invalid
-    Picks.any_instance.stubs(:valid?).returns(false)
+    Pick.any_instance.stubs(:valid?).returns(false)
     post :create
     assert_template 'new'
   end
   
   def test_create_valid
-    Picks.any_instance.stubs(:valid?).returns(true)
+    Pick.any_instance.stubs(:valid?).returns(true)
     post :create
-    assert_redirected_to picks_url(assigns(:picks))
+    assert_redirected_to pick_url(assigns(:pick))
   end
   
   def test_edit
-    get :edit, :id => Picks.first
+    get :edit, :id => Pick.first
     assert_template 'edit'
   end
   
   def test_update_invalid
-    Picks.any_instance.stubs(:valid?).returns(false)
-    put :update, :id => Picks.first
+    Pick.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Pick.first
     assert_template 'edit'
   end
   
   def test_update_valid
-    Picks.any_instance.stubs(:valid?).returns(true)
-    put :update, :id => Picks.first
-    assert_redirected_to picks_url(assigns(:picks))
+    Pick.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Pick.first
+    assert_redirected_to pick_url(assigns(:pick))
   end
   
   def test_destroy
-    picks = Picks.first
-    delete :destroy, :id => picks
+    pick = Pick.first
+    delete :destroy, :id => pick
     assert_redirected_to picks_url
-    assert !Picks.exists?(picks.id)
+    assert !Pick.exists?(pick.id)
   end
 end

@@ -1,12 +1,32 @@
-<% title "Players" %>
+<% title "Player" %>
 
 <p>
   <strong>Name:</strong>
-  <%=h @players.name %>
+  <%=h @player.name %>
+</p>
+<p>
+  <strong>Position:</strong>
+  <%=h @player.position %>
+</p>
+<p>
+  <strong>Drafted:</strong>
+  <%=h @player.drafted %>
+</p>
+<p>
+  <strong>Pick:</strong>
+  <%=h @player.pick %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%=h @player.team_id %>
+</p>
+<p>
+  <strong>Pick:</strong>
+  <%=h @player.pick_id %>
 </p>
 
 <p>
-  <%= link_to "Edit", edit_players_path(@players) %> |
-  <%= link_to "Destroy", @players, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Edit", edit_player_path(@player) %> |
+  <%= link_to "Destroy", @player, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", players_path %>
 </p>

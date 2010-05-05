@@ -1,44 +1,44 @@
 class PicksController < ApplicationController
   def index
-    @picks = Picks.all
+    @picks = Pick.all
   end
   
   def show
-    @picks = Picks.find(params[:id])
+    @pick = Pick.find(params[:id])
   end
   
   def new
-    @picks = Picks.new
+    @pick = Pick.new
   end
   
   def create
-    @picks = Picks.new(params[:picks])
-    if @picks.save
-      flash[:notice] = "Successfully created picks."
-      redirect_to @picks
+    @pick = Pick.new(params[:pick])
+    if @pick.save
+      flash[:notice] = "Successfully created pick."
+      redirect_to @pick
     else
       render :action => 'new'
     end
   end
   
   def edit
-    @picks = Picks.find(params[:id])
+    @pick = Pick.find(params[:id])
   end
   
   def update
-    @picks = Picks.find(params[:id])
-    if @picks.update_attributes(params[:picks])
-      flash[:notice] = "Successfully updated picks."
-      redirect_to @picks
+    @pick = Pick.find(params[:id])
+    if @pick.update_attributes(params[:pick])
+      flash[:notice] = "Successfully updated pick."
+      redirect_to @pick
     else
       render :action => 'edit'
     end
   end
   
   def destroy
-    @picks = Picks.find(params[:id])
-    @picks.destroy
-    flash[:notice] = "Successfully destroyed picks."
+    @pick = Pick.find(params[:id])
+    @pick.destroy
+    flash[:notice] = "Successfully destroyed pick."
     redirect_to picks_url
   end
 end

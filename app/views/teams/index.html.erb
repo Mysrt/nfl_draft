@@ -3,15 +3,21 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Division</th>
+    <th>Player</th>
+    <th>Pick</th>
   </tr>
-  <% for teams in @teams %>
+  <% for team in @teams %>
     <tr>
-      <td><%=h teams.name %></td>
-      <td><%= link_to "Show", teams %></td>
-      <td><%= link_to "Edit", edit_teams_path(teams) %></td>
-      <td><%= link_to "Destroy", teams, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%=h team.name %></td>
+      <td><%=h team.division %></td>
+      <td><%=h team.player_id %></td>
+      <td><%=h team.pick_id %></td>
+      <td><%= link_to "Show", team %></td>
+      <td><%= link_to "Edit", edit_team_path(team) %></td>
+      <td><%= link_to "Destroy", team, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Teams", new_teams_path %></p>
+<p><%= link_to "New Team", new_team_path %></p>

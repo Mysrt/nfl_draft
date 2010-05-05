@@ -1,8 +1,28 @@
-<% form_for @players do |f| %>
+<% form_for @player do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.label :drafted %><br />
+    <%= f.check_box :drafted %>
+  </p>
+  <p>
+    <%= f.label :pick %><br />
+    <%= f.text_field :pick %>
+  </p>
+  <p>
+    <%= f.label :team_id %><br />
+    <%= f.text_field :team_id %>
+  </p>
+  <p>
+    <%= f.label :pick_id %><br />
+    <%= f.text_field :pick_id %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

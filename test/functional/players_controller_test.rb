@@ -7,7 +7,7 @@ class PlayersControllerTest < ActionController::TestCase
   end
   
   def test_show
-    get :show, :id => Players.first
+    get :show, :id => Player.first
     assert_template 'show'
   end
   
@@ -17,38 +17,38 @@ class PlayersControllerTest < ActionController::TestCase
   end
   
   def test_create_invalid
-    Players.any_instance.stubs(:valid?).returns(false)
+    Player.any_instance.stubs(:valid?).returns(false)
     post :create
     assert_template 'new'
   end
   
   def test_create_valid
-    Players.any_instance.stubs(:valid?).returns(true)
+    Player.any_instance.stubs(:valid?).returns(true)
     post :create
-    assert_redirected_to players_url(assigns(:players))
+    assert_redirected_to player_url(assigns(:player))
   end
   
   def test_edit
-    get :edit, :id => Players.first
+    get :edit, :id => Player.first
     assert_template 'edit'
   end
   
   def test_update_invalid
-    Players.any_instance.stubs(:valid?).returns(false)
-    put :update, :id => Players.first
+    Player.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Player.first
     assert_template 'edit'
   end
   
   def test_update_valid
-    Players.any_instance.stubs(:valid?).returns(true)
-    put :update, :id => Players.first
-    assert_redirected_to players_url(assigns(:players))
+    Player.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Player.first
+    assert_redirected_to player_url(assigns(:player))
   end
   
   def test_destroy
-    players = Players.first
-    delete :destroy, :id => players
+    player = Player.first
+    delete :destroy, :id => player
     assert_redirected_to players_url
-    assert !Players.exists?(players.id)
+    assert !Player.exists?(player.id)
   end
 end

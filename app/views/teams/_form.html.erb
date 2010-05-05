@@ -1,8 +1,20 @@
-<% form_for @teams do |f| %>
+<% form_for @team do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :division %><br />
+    <%= f.text_field :division %>
+  </p>
+  <p>
+    <%= f.label :player_id %><br />
+    <%= f.text_field :player_id %>
+  </p>
+  <p>
+    <%= f.label :pick_id %><br />
+    <%= f.text_field :pick_id %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
