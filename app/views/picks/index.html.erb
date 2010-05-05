@@ -1,0 +1,17 @@
+<% title "Picks" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for picks in @picks %>
+    <tr>
+      <td><%=h picks.name %></td>
+      <td><%= link_to "Show", picks %></td>
+      <td><%= link_to "Edit", edit_picks_path(picks) %></td>
+      <td><%= link_to "Destroy", picks, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Picks", new_picks_path %></p>

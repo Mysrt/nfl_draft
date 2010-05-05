@@ -1,0 +1,12 @@
+<% title "Picks" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @picks.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_picks_path(@picks) %> |
+  <%= link_to "Destroy", @picks, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", picks_path %>
+</p>

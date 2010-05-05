@@ -4,6 +4,7 @@ class CreateTeams < ActiveRecord::Migration
       t.string :name
       t.string :division
       t.references :player
+      t.references :pick
 
       t.timestamps
     end

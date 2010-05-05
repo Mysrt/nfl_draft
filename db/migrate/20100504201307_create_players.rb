@@ -6,6 +6,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.boolean :drafted
       t.integer :pick
       t.references :team
+      t.references :pick
 
       t.timestamps
     end

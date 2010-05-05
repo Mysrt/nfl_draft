@@ -1,3 +1,4 @@
 class Team < ActiveRecord::Base
-  has_many :player
+  belongs_to :pick
+  has_many :players
 end

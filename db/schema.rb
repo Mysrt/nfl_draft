@@ -11,9 +11,9 @@
 
 ActiveRecord::Schema.define(:version => 20100504201821) do
 
-  create_table "orders", :force => true do |t|
+  create_table "picks", :force => true do |t|
     t.integer  "round"
-    t.integer  "pick"
+    t.integer  "pick_number"
     t.integer  "team_id"
     t.integer  "player_id"
     t.datetime "created_at"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20100504201821) do
     t.boolean  "drafted"
     t.integer  "pick"
     t.integer  "team_id"
+    t.integer  "pick_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20100504201821) do
     t.string   "name"
     t.string   "division"
     t.integer  "player_id"
+    t.integer  "pick_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
