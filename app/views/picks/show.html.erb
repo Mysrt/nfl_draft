@@ -2,20 +2,18 @@
 
 <p>
   <strong>Round:</strong>
-  <%=h @pick.round %>
+  <%= @pick.round %>
 </p>
 <p>
   <strong>Pick Number:</strong>
-  <%=h @pick.pick_number %>
+  <%= @pick.pick_number %>
 </p>
 <p>
   <strong>Team:</strong>
-  <%=h @pick.team_id %>
+  <%= @pick.team.name %>
 </p>
-<p>
-  <strong>Player:</strong>
-  <%=h @pick.player_id %>
-</p>
+
+<%= render :partial => '/players/players'%>
 
 <p>
   <%= link_to "Edit", edit_pick_path(@pick) %> |

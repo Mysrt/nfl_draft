@@ -9,13 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100504201821) do
+ActiveRecord::Schema.define(:version => 20100505175032) do
 
   create_table "picks", :force => true do |t|
     t.integer  "round"
     t.integer  "pick_number"
     t.integer  "team_id"
     t.integer  "player_id"
+    t.boolean  "used",        :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -23,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20100504201821) do
   create_table "players", :force => true do |t|
     t.string   "name"
     t.string   "position"
-    t.boolean  "drafted"
+    t.boolean  "drafted",    :default => false, :null => false
     t.integer  "pick"
     t.integer  "team_id"
     t.integer  "pick_id"
@@ -36,6 +37,15 @@ ActiveRecord::Schema.define(:version => 20100504201821) do
     t.string   "division"
     t.integer  "player_id"
     t.integer  "pick_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

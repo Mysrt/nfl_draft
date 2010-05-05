@@ -11,6 +11,20 @@ h1{
   color: #000;	
 }
 
+h2{
+ padding: 5px 5px 5px 15px;
+  font-size: 24px;
+  margin: 0;
+  color: #000;	
+}
+
+h3{
+ padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  color: #FFF;	
+}
+
 a img {
   border: none;
 }
@@ -25,13 +39,35 @@ a {
   overflow: hidden;
 }
 
-#container {
+div.right_column {
+  width: 520px;
+  float: right;
+}
+
+div.left_column {
+  width: 360px;
+  display: inline;
+  float: left;
+}
+
+div.container {
   width: 75%;
   margin: 0 auto;
   background-color: #FFF;
-  padding: 20px 40px;
+  padding: 80px 40px;
   border: solid 1px black;
   margin-top: 20px;
+}
+
+div.container div.right_column {
+  width: 520px;
+  float: right;
+}
+
+div.container div.left_column {
+  width: 360px;
+  display: inline;
+  float: left;
 }
 
 #flash_notice, #flash_error {

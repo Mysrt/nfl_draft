@@ -8,7 +8,7 @@ namespace :db do
       rows_picks = []
       
       
-      FasterCSV.foreach("/Users/jamestrowbridge/Downloads/draft/teams.csv") do |row|   
+      FasterCSV.foreach("public/csv_files/teams.csv") do |row|   
         unless row[0] == "Team Name"
           Team.create(
             :name     => row[0],
@@ -18,7 +18,7 @@ namespace :db do
         end   
       end
       
-      FasterCSV.foreach("/Users/jamestrowbridge/Downloads/draft/players.csv") do |row|
+      FasterCSV.foreach("public/csv_files/players.csv") do |row|
         unless row[0] == "Player Name"
           Player.create(
             :name     => row[0],
@@ -28,8 +28,7 @@ namespace :db do
         end    
       end
 
-      FasterCSV.foreach("/Users/jamestrowbridge/Downloads/draft/order.csv") do |row|
-        puts row[2]
+      FasterCSV.foreach("public/csv_files/order.csv") do |row|
         unless row[0] == "Round"
           Pick.create(
             :round          => row[0],
@@ -40,27 +39,23 @@ namespace :db do
         end  
       end
       
-      FasterCSV.open("/Users/jamestrowbridge/Downloads/draft/order.csv", "w") do |csv|
+      FasterCSV.open("public/csv_files/order.csv", "w") do |csv|
           rows_picks.each do |r|
             csv << r 
         end
       end
       
-      FasterCSV.open("/Users/jamestrowbridge/Downloads/draft/players.csv", "w") do |csv|
+      FasterCSV.open("public/csv_files/players.csv", "w") do |csv|
           rows_players.each do |r|
             csv << r 
         end
       end
       
-      FasterCSV.open("/Users/jamestrowbridge/Downloads/draft/teams.csv", "w") do |csv|
+      FasterCSV.open("public/csv_files/teams.csv", "w") do |csv|
           rows_teams.each do |r|
             csv << r 
         end
       end
-      
-      File.rename("/Users/jamestrowbridge/Downloads/draft/order.csv", "/Users/jamestrowbridge/Downloads/draft/order.csv")
-      File.rename("/Users/jamestrowbridge/Downloads/draft/players.csv", "/Users/jamestrowbridge/Downloads/draft/players.csv")
-      File.rename("/Users/jamestrowbridge/Downloads/draft/teams.csv", "/Users/jamestrowbridge/Downloads/draft/teams.csv")
-      
+ 
   end
 end

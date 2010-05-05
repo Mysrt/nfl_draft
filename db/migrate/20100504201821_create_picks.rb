@@ -5,6 +5,7 @@ class CreatePicks < ActiveRecord::Migration
       t.integer :pick_number
       t.integer :team_id
       t.integer :player_id
+      t.boolean :used, :default => false, :null => false
 
       t.timestamps
     end

@@ -2,12 +2,19 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
+	<h3>
+	<% if logged_in? %>
+		Welcome <%= current_user.username %> <%= link_to 'Logout', logout_path %>
+	<% else %>
+		<%= render :partial => '/sessions/new' %>
+	<% end %>
+	</h3>
     <title><%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'application' %>
     <%= yield(:head) %>
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>
