@@ -42,7 +42,8 @@ describe Team do
           )
         end
       Pick.current.pick_number == 255
-      @team.kiper_draft == false
+      @team.kiper_draft == true
+      @team.draft(@player) == true
     end
   end
 end
