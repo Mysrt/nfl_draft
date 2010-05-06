@@ -41,4 +41,8 @@ class PlayersController < ApplicationController
     flash[:notice] = "Successfully destroyed player."
     redirect_to players_url
   end
+  
+  def undrafted
+    @players = Player.undrafted
+  end
 end

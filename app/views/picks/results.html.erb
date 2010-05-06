@@ -1,0 +1,5 @@
+<% @draft_results.each do |result| %>
+	Round <%= result.round %>
+	Pick <%= result.pick_number %>
+	<li><%= result.player.name %> , <%= result.player.position %></li>				
+<% end %>

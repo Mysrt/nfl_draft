@@ -6,11 +6,13 @@
 	
 The Previous 3 picks have been
 	<% @previous_picks.each do |pick| %>
-		<li><h1><%= pick.team.name %><h1>
-			Who drafted <%= pick.player.name%>, <%=pick.player.position%></li>
+		<h2><%= pick.team.name %></h2>
+			Who drafted <li><%= pick.player.name%>, <%=pick.player.position%></li>
 	<% end %>
 	
 <h2>The next pick will be</h2>
 <li><%= Pick.next.team.name %></li>
 
-<h1>To view what players your team drafted click <%= link_to "here", teams_path %><h1>
+<h1>To view what players your team drafted click <%= link_to "here", teams_path %></h1>
+<h1>To view the current draft results in full click <%= link_to "here", results_path %></h1>
+<h1>To view the the remaining players <%= link_to "here", undrafted_path %></h1>

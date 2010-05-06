@@ -5,7 +5,6 @@
     <th>Name</th>
     <th>Position</th>
     <th>Drafted</th>
-    <th>Pick</th>
     <th>Team</th>
     <th>Pick</th>
   </tr>
@@ -14,8 +13,7 @@
       <td><%=h player.name %></td>
       <td><%=h player.position %></td>
       <td><%=h player.drafted %></td>
-      <td><%=h player.pick %></td>
-      <td><%=h player.team_id %></td>
+      <td><%=h player.team %></td>
       <td><%=h player.pick_id %></td>
       <td><%= link_to "Show", player %></td>
       <td><%= link_to "Edit", edit_player_path(player) %></td>

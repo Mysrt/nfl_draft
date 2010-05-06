@@ -2735,4 +2735,356 @@ Finished in 0.143213 seconds
 Finished in 0.145101 seconds
 
 8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit          git add .spec pick_spec.rb[4hla[4lyer_spec.rb[2Pick_spec.rb[4hla[4lyer_spec.rb[2Pteam_spec.rb
+...
+
+Finished in 0.604303 seconds
+
+3 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ gitc  commit
+7[?47h[?1h=[1;40r[m[H[2J[40;1H".git/COMMIT_EDITMSG" 22L, 738C[>c[1;1H[1m[30m  1 [m[1m                                                                                                                    [m[2;1H[30m  2 [m[33m# Please enter the commit message for your changes. Lines starting[m
+[30m  3 [m[33m# with '#' will be ignored, and an empty message aborts the commit.[m
+[30m  4 [m[33m#[m
+[30m  5 [m[33m# Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m
+[30m  6 [m[33m#[m
+[30m  7 [m[33m# On branch [m[37mmaster[m
+[30m  8 [m[33m# [m[34mChanges to be committed:[m
+[30m  9 [m[33m#   (use "git reset HEAD <file>..." to unstage)[m
+[30m 10 [m[33m#[m
+[30m 11 [m[33m# modified: [m[36m  team_spec.rb[m
+[30m 12 [m[33m#[m
+[30m 13 [m[33m# [m[34mChanged but not updated:[m
+[30m 14 [m[33m#   (use "git add/rm <file>..." to update what will be committed)[m
+[30m 15 [m[33m#   (use "git checkout -- <file>..." to discard changes in working directory)[m
+[30m 16 [m[33m#[m
+[30m 17 [m[33m# deleted: [m[36m   ../../app/views/teams/_form.html.erb[m
+[30m 18 [m[33m# deleted: [m[36m   ../../app/views/teams/edit.html.erb[m
+[30m 19 [m[33m# deleted: [m[36m   ../../app/views/teams/new.html.erb[m
+[30m 20 [m[33m# modified: [m[36m  ../../log/test.log[m
+[30m 21 [m[33m# modified: [m[36m  ../../typescript[m
+[30m 22 [m[33m#[m
+[30m~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [30;1H~                                                                                                                       [31;1H~                                                                                                                       [32;1H~                                                                                                                       [33;1H~                                                                                                                       [34;1H~                                                                                                                       [35;1H~                                                                                                                       [36;1H~                                                                                                                       [37;1H~                                                                                                                       [38;1H~                                                                                                                       [39;1H~                                                                                                                       [m[40;103H1,0-1[9CAll[1;5H[40;1H[1m[30m[46m-- INSERT --[m[40;13H[K[40;103H1,1[11CAll[1;5H[1m[34mf[m[1m                                                                                                                   [m[40;105H2[1;6H[1m[34mo[m[1m                                                                                                                  [m[2;4H for            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[40;29H[1m[30m[46m The only match[m[2;4H for            [1;7H[1m[34mr[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[2;4H for            [1;8H[1m[34mg[m[1m                                                                                                                [m[2;4H[30m [m[33m# Please enter [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CAll[40;103H[K[40;103H1,5[11CAll[1;9H[1m[34mo[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CAll[40;103H[K[40;103H1,6[11CAll[1;10H[1m[34mt[m[1m                                                                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,7[11CAll[40;103H[K[40;103H1,7[11CAll[1;11H[1m[34m [m[1m                                                                                                             [m[40;105H8[1;12H[1m[34mt[m[1m                                                                                                            [m[40;105H9[1;13H[1m[34mo[m[1m                                                                                                           [m[2;11H to             [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;11H[33mse enter the com[m[40;29H[1m[30m[46m The only match[m[2;11H to             [1;14H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,10[10CAll[1;14H[1m[34m [m[1m                                                                                                          [m[2;11H[33mse enter the com[m[40;103H[K[40;103H1,11[10CAll[1;15Ha[40;93Ha[1;15H[40;93H [1;15H[1m [m[1m[34mad[m[1m                                                                                                        [m[2;14H add            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;14H[33menter the commit[m[40;29H[1m[30m[46m The only match[m[2;14H add            [1;17H[1m[34md[m[1m                                                                                                       [m[2;14H[33menter the commit[m[2;14H add            [1;18H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,14[10CAll[1;18H[1m[34m [m[1m                                                                                                      [m[2;14H[33menter the commit[m[40;103H[K[40;103H1,15[10CAll[1;19H[1m[34mi[m[1m                                                                                                     [m[40;106H6[1;20H[1m[34mn[m[1m                                                                                                    [m[2;18H in             [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;18H[33mr the commit mes[m[40;29H[1m[30m[46m The only match[m[2;18H in             [1;21H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,17[10CAll[1;21H[1m[34m [m[1m                                                                                                   [m[2;18H[33mr the commit mes[m[40;103H[K[40;103H1,18[10CAll[1;22Ha[40;93Ha[1;22H[40;93H [1;22H[1m [m[1m[34ma [m[1m                                                                                                 [m[40;105H20[1;24H[1m[34me[m[1m                                                                                                [m[40;106H1[1;25H[1m                                                                                                 [m[40;106H0[1;24H[1m[34mr[m[1m                                                                                                [m[40;106H1[1;25H[1m[34ms[m[1m                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,22[10CAll[40;103H[K[40;103H1,22[10CAll[1;26H[1m[34mp[m[1m                                                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,23[10CAll[40;103H[K[40;103H1,23[10CAll[1;27H[1m[34me[m[1m                                                                                             [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,24[10CAll[40;103H[K[40;103H1,24[10CAll[1;28H[1m[34mc[m[1m                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,25[10CAll[40;103H[K[40;103H1,25[10CAll[1;29H[1m[34m [m[1m                                                                                           [m[40;106H6[1;30H[1m[34mt[m[1m                                                                                          [m[40;106H7[1;31H[1m[34me[m[1m                                                                                         [m[2;29H team_spec      [3;29H teams          [4;30Htest[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;29H[33mt message for yo[3;29Hed, and an empty[m[4;30H[K[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 3[m[2;29H team_spec      [3;29H teams          [4;30Htest[1;32H[1m[34ms[m[1m                                                                                        [m[2;29H[33mt message for yo[3;29Hed, and an empty[m[4;30H[K[2;29H test           [1;33H[1m[34mt[m[1m                                                                                       [m[2;29H[33mt message for yo[m[2;29H test           [1;34H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,30[10CAll[1;34H[1m[34m,[m[1m                                                                                      [m[2;29H[33mt message for yo[m[40;103H[K[40;103H1,31[10CAll[1;35H[1m[34m [m[1m                                                                                     [m[40;106H2[1;36H[1m[34mi[m[1m                                                                                    [m[40;106H3[1;37H[1m[34mt[m[1m                                                                                   [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,34[10CAll[40;103H[K[40;103H1,34[10CAll[1;38H[1m[34ms[m[1m                                                                                  [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,35[10CAll[40;103H[K[40;103H1,35[10CAll[1;39H[1m[34m [m[1m                                                                                 [m[40;106H6[1;40H[1m[34mn[m[1m                                                                                [m[40;106H7[1;41H[1m[34mo[m[1m                                                                               [m[2;39H not            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;39H[33mfor your changes[m[40;29H[1m[30m[46m The only match[m[2;39H not            [1;42H[1m[34mw[m[1m                                                                              [m[2;39H[33mfor your changes[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,39[10CAll[40;103H[K[40;103H1,39[10CAll[1;43H[1m[34m [m[1m                                                                             [m[40;105H40[1;44Ha[40;93Ha[1;44H[40;93H [1;44H[1m [m[1m[34mad[m[1m                                                                           [m[2;43H add            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;43H[33myour changes. Li[m[40;29H[1m[30m[46m The only match[m[2;43H add            [1;46H[1m[34md[m[1m                                                                          [m[2;43H[33myour changes. Li[m[2;43H add            [1;47H[1m[34me[m[1m                                                                         [m[2;43H[33myour changes. Li[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,44[10CAll[40;103H[K[40;103H1,44[10CAll[1;48H[1m[34md[m[1m                                                                        [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,45[10CAll[40;103H[K[40;103H1,45[10CAll[1;49H[40;1H[K[1;48H[40;93H^[[1;48H[40;93H  [1;49H[40;103H1,44[10CAll[1;48H[40;93H:[1;48H[40;93H[K[40;1H:e[40;2H[K[40;2Hw".git/COMMIT_EDITMSG" 22L, 782C written[1;48H[40;103H1,44[10CAll[40;103H[K[40;103H1,44[10CAll[1;48H[40;93H:[1;48H[40;1H[K[40;1H:q[40;1H[K[40;1H[?1l>[2J[?47l8[master bfc50a8] forgot to add in a rspec test, its now added
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git push origin master
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 480 bytes, done.
+Total 5 (delta 4), reused 0 (delta 0)
+To git@github.com:Mysrt/nfl_draft.git
+   ac0e8fe..bfc50a8  master -> master
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake   ake db  -D
+(in /Users/jamestrowbridge/dev/nfl_draft)
+rake db:abort_if_pending_migrations
+    Raises an error if there are pending migrations
+
+rake db:charset
+    Retrieves the charset for the current environment's database
+
+rake db:collation
+    Retrieves the collation for the current environment's database
+
+rake db:create
+    Create the database defined in config/database.yml for the current RAILS_ENV
+
+rake db:create:all
+    Create all the local databases defined in config/database.yml
+
+rake db:draft_information
+    Load Players, Draft Order, and teams from csv file
+
+rake db:drop
+    Drops the database for the current RAILS_ENV
+
+rake db:drop:all
+    Drops all the local databases defined in config/database.yml
+
+rake db:fixtures:identify
+    Search for a fixture given a LABEL or ID. Specify an alternative path (eg. spec/fixtures) using FIXTURES_PATH=spec/fixtures.
+
+rake db:fixtures:load
+    Load fixtures into the current environment's database.  Load specific fixtures using FIXTURES=x,y. Load from subdirectory in test/fixtures using FIXTURES_DIR=z. Specify an alternative path (eg. spec/fixtures) using FIXTURES_PATH=spec/fixtures.
+
+rake db:migrate
+    Migrate the database through scripts in db/migrate and update db/schema.rb by invoking db:schema:dump. Target specific version with VERSION=x. Turn off output with VERBOSE=false.
+
+rake db:migrate:down
+    Runs the "down" for a given migration VERSION.
+
+rake db:migrate:redo
+    Rollbacks the database one migration and re migrate up. If you want to rollback more than one step, define STEP=x. Target specific version with VERSION=x.
+
+rake db:migrate:reset
+    Resets your database using your migrations for the current environment
+
+rake db:migrate:up
+    Runs the "up" for a given migration VERSION.
+
+rake db:reset
+    Drops and recreates the database from db/schema.rb for the current environment and loads the seeds.
+
+rake db:rollback
+    Rolls the schema back to the previous version. Specify the number of steps with STEP=n
+
+rake db:schema:dump
+    Create a db/schema.rb file that can be portably used against any DB supported by AR
+
+rake db:schema:load
+    Load a schema.rb file into the database
+
+rake db:seed
+    Load the seed data from db/seeds.rb
+
+rake db:sessions:clear
+    Clear the sessions table
+
+rake db:sessions:create
+    Creates a sessions migration for use with ActiveRecord::SessionStore
+
+rake db:setup
+    Create the database, load the schema, and initialize with the seed data
+
+rake db:structure:dump
+    Dump the database structure to a SQL file
+
+rake db:test:clone
+    Recreate the test database from the current environment's database schema
+
+rake db:test:clone_structure
+    Recreate the test databases from the development structure
+
+rake db:test:load
+    Recreate the test database from the current schema.rb
+
+rake db:test:prepare
+    Check for pending migrations and load the test schema
+
+rake db:test:purge
+    Empty the test database
+
+rake db:version
+    Retrieves the current schema version number
+
+rake doc:app
+    Build the RDOC HTML Files
+
+rake doc:clobber_app
+    Remove rdoc products
+
+rake doc:clobber_plugins
+    Remove plugin documentation
+
+rake doc:clobber_rails
+    Remove rdoc products
+
+rake doc:guides
+    Generate Rails guides
+
+rake doc:plugins
+    Generate documentation for all installed plugins
+
+rake doc:rails
+    Build the RDOC HTML Files
+
+rake doc:reapp
+    Force a rebuild of the RDOC files
+
+rake doc:rerails
+    Force a rebuild of the RDOC files
+
+rake gems
+    List the gems that this rails application depends on
+
+rake gems:build
+    Build any native extensions for unpacked gems
+
+rake gems:build:force
+    Force the build of all gems
+
+rake gems:install
+    Installs all required gems.
+
+rake gems:refresh_specs
+    Regenerate gem specifications in correct format.
+
+rake gems:unpack
+    Unpacks all required gems into vendor/gems.
+
+rake gems:unpack:dependencies
+    Unpacks all required gems and their dependencies into vendor/gems.
+
+rake log:clear
+    Truncates all *.log files in log/ to zero bytes
+
+rake middleware
+    Prints out your Rack middleware stack
+
+rake notes
+    Enumerate all annotations
+
+rake notes:custom
+    Enumerate a custom annotation, specify with ANNOTATION=WTFHAX
+
+rake notes:fixme
+    Enumerate all FIXME annotations
+
+rake notes:optimize
+    Enumerate all OPTIMIZE annotations
+
+rake notes:todo
+    Enumerate all TODO annotations
+
+rake rails:freeze:edge
+    Lock to latest Edge Rails, for a specific release use RELEASE=1.2.0
+
+rake rails:freeze:gems
+    Lock this application to the current gems (by unpacking them into vendor/rails)
+
+rake rails:template
+    Applies the template supplied by LOCATION=/path/to/template
+
+rake rails:unfreeze
+    Unlock this application from freeze of gems or edge and return to a fluid use of system gems
+
+rake rails:update
+    Update both configs, scripts and public/javascripts from Rails
+
+rake rails:update:application_controller
+    Rename application.rb to application_controller.rb
+
+rake rails:update:configs
+    Update config/boot.rb from your current rails install
+
+rake rails:update:generate_dispatchers
+    Generate dispatcher files in RAILS_ROOT/public
+
+rake rails:update:javascripts
+    Update your javascripts from your current rails install
+
+rake rails:update:scripts
+    Add new scripts to the application script/ directory
+
+rake routes
+    Print out all defined routes in match order, with names. Target specific controller with CONTROLLER=x.
+
+rake secret
+    Generate a crytographically secure secret key. This is typically used to generate a secret for cookie sessions.
+
+rake spec
+    Run all specs in spec directory (excluding plugin specs)
+
+rake spec:clobber_rcov
+    Remove rcov products for rcov
+
+rake spec:controllers
+    Run the code examples in spec/controllers
+
+rake spec:db:fixtures:load
+    Load fixtures (from spec/fixtures) into the current environment's database.  Load specific fixtures using FIXTURES=x,y. Load from subdirectory in test/fixtures using FIXTURES_DIR=z.
+
+rake spec:doc
+    Print Specdoc for all specs (excluding plugin specs)
+
+rake spec:helpers
+    Run the code examples in spec/helpers
+
+rake spec:integration
+    Run the code examples in spec/integration
+
+rake spec:lib
+    Run the code examples in spec/lib
+
+rake spec:models
+    Run the code examples in spec/models
+
+rake spec:plugin_doc
+    Print Specdoc for all plugin examples
+
+rake spec:plugins
+    Run the code examples in vendor/plugins (except RSpec's own)
+
+rake spec:plugins:rspec_on_rails
+    Runs the examples for rspec_on_rails
+
+rake spec:rcov
+    Run all specs in spec directory with RCov (excluding plugin specs)
+
+rake spec:views
+    Run the code examples in spec/views
+
+rake stats
+    Report code statistics (KLOCs, etc) from the application
+
+rake test
+    Run all unit, functional and integration tests
+
+rake test:benchmark
+    Run tests for benchmarkdb:test:prepare / Benchmark the performance tests
+
+rake test:functionals
+    Run tests for functionalsdb:test:prepare / Run the functional tests in test/functional
+
+rake test:integration
+    Run tests for integrationdb:test:prepare / Run the integration tests in test/integration
+
+rake test:plugins
+    Run tests for pluginsenvironment / Run the plugin tests in vendor/plugins/*/**/test (or specify with PLUGIN=name)
+
+rake test:profile
+    Run tests for profiledb:test:prepare / Profile the performance tests
+
+rake test:recent
+    Run tests for recentdb:test:prepare / Test recent changes
+
+rake test:uncommitted
+    Run tests for uncommitteddb:test:prepare / Test changes since last checkin (only Subversion and Git)
+
+rake test:units
+    Run tests for unitsdb:test:prepare / Run the unit tests in test/unit
+
+rake time:zones:all
+    Displays names of all time zones recognized by the Rails TimeZone class, grouped by offset. Results can be filtered with optional OFFSET parameter, e.g., OFFSET=-6
+
+rake time:zones:local
+    Displays names of time zones recognized by the Rails TimeZone class with the same offset as the system local time
+
+rake time:zones:us
+    Displays names of US time zones recognized by the Rails TimeZone class, grouped by offset. Results can be filtered with optional OFFSET parameter, e.g., OFFSET=-6
+
+rake tmp:cache:clear
+    Clears all files and directories in tmp/cache
+
+rake tmp:clear
+    Clear session, cache, and socket files from tmp/
+
+rake tmp:create
+    Creates tmp directories for sessions, cache, sockets, and pids
+
+rake tmp:pids:clear
+    Clears all files in tmp/pids
+
+rake tmp:sessions:clear
+    Clears all files in tmp/sessions
+
+rake tmp:sockets:clear
+    Clears all files in tmp/sockets
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:reset
+(in /Users/jamestrowbridge/dev/nfl_draft)
+-- create_table("picks", {:force=>true})
+   -> 0.0662s
+-- create_table("players", {:force=>true})
+   -> 0.0034s
+-- create_table("teams", {:force=>true})
+   -> 0.0041s
+-- create_table("users", {:force=>true})
+   -> 0.0034s
+-- initialize_schema_migrations_table()
+   -> 0.0048s
+-- assume_migrated_upto_version(20100505175032)
+   -> 0.0089s
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:reset-D[Kgit push origin master[12Pcommit[1Padd .spec team_spec.rb[8Pgit add .spec pick_spec.rb[4hla[4lyer_spec.rb[2Pteam_spec.rbpick_spec.rbrake db:draft_information[10Pmigratedraft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ 

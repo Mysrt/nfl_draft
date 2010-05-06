@@ -6,6 +6,10 @@ class Pick < ActiveRecord::Base
     Team.find(self.team_id)
   end
   
+  def self.results
+    Pick.find(:all, :conditions => {:used => true})
+  end
+  
   def self.current
     Pick.first(:conditions => {:used => false})
   end
@@ -26,9 +30,9 @@ class Pick < ActiveRecord::Base
   
   def self.previous_picks    
     picks = Pick.find(:all, :conditions => {:used => true})
-    #technically they should already be sorted, but just in case
+    #technically they should already be sorted, but to be robust
     picks.sort_by {|pick| pick['pick_number']}
-    picks.reverse
+    picks.reverse!
     picks = picks[0...3]
   end
   
