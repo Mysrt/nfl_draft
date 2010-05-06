@@ -1,6 +1,25 @@
-<% Player.undrafted.each do |player| %>
-	<li><%= player.name %>
-	<%= player.position %>
-	<%= link_to 'Draft Player', draft_player_path(player) %></li>
+<h1>Players still undrafted</h1>
+<%= link_to "QB", undrafted_path(:position => "QB")%> |
+<%= link_to "WR", undrafted_path(:position => "WR")%> |
+<%= link_to "C", undrafted_path(:position => "C")%> |
+<%= link_to "CB", undrafted_path(:position => "CB")%> |
+<%= link_to "DE", undrafted_path(:position => "DE")%> |
+<%= link_to "DT", undrafted_path(:position => "DT")%> |
+<%= link_to "FB", undrafted_path(:position => "FB")%> |
+<%= link_to "FS", undrafted_path(:position => "FS")%> |
+<%= link_to "ILB", undrafted_path(:position => "ILB")%> |
+<%= link_to "OLB", undrafted_path(:position => "OLB")%> |
+<%= link_to "LS", undrafted_path(:position => "LS")%> |
+<%= link_to "OG", undrafted_path(:position => "OG")%> |
+<%= link_to "OT", undrafted_path(:position => "OT")%> |
+<%= link_to "RB", undrafted_path(:position => "RB")%> |
+<%= link_to "TE", undrafted_path(:position => "TE")%> |
+<%= link_to "SS", undrafted_path(:position => "SS")%> |
+<%= link_to "P", undrafted_path(:position => "P")%> |
+<%= link_to "K", undrafted_path(:position => "K")%>
+<br>
 
+<% players.each do |player| %>
+	<li><%= player.name %>
+		<%= player.position %></li>
 <% end %>

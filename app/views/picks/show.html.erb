@@ -13,8 +13,7 @@
   <%= @pick.team.name %>
 </p>
 
-<%= render :partial => '/players/players'%>
-
+<%= render :partial => '/players/players', :locals => {:players => @players}%>
 <p>
   <%= link_to "Edit", edit_pick_path(@pick) %> |
   <%= link_to "Destroy", @pick, :confirm => 'Are you sure?', :method => :delete %> |

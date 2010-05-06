@@ -1,5 +1,1 @@
-Players still undrafted
-<% @players.each do |player| %>
-	<li><%= player.name %>
-		<%= player.position %></li>
-<% end %>
+<%= render :partial => 'players', :locals => {:players => @players}%>

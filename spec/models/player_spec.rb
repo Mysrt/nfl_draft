@@ -15,7 +15,7 @@ describe Player do
       )
       
      @player = Player.create(
-      :name         => "Coly McCoy",
+      :name         => "Colt McCoy",
       :position     => "QB"
       )
   end
@@ -30,6 +30,38 @@ describe Player do
     it "should update the pick with him as the player" do
       @team.draft(@player)
       @pick.player == @player
+    end
+  end
+  
+  describe "when a player list is asked to be sorted" do
+    
+    it "should only contain players of that position" do
+      players = []
+      players.push(Player.create(
+       :name         => "LeBron James",
+       :position     => "RB"
+      ))
+      players.push(Player.create(
+        :name         => "Mo Williams",
+        :position     => "CB"
+      ))
+      players.push(@player)
+      
+      player = Player.filter_position("CB")
+      
+      player.first.position == "CB"    
+    end
+    
+    it "should be listed in alphabetical order " do
+      players = []
+      players.push(Player.create(
+       :name         => "LeBron James",
+       :position     => "QB"
+      ))
+      players.push(@player)
+      player = Player.filter_position("QB")
+
+      player.first.name == "Colt McCoy"
     end
   end
 end

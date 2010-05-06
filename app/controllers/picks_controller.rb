@@ -12,6 +12,7 @@ class PicksController < ApplicationController
   
   def show
     @pick = Pick.find(params[:id])
+    @players = Player.undrafted
   end
   
   def new
@@ -59,7 +60,7 @@ class PicksController < ApplicationController
     draft_over = Pick.current.team.draft(player)
     
     respond_to do |format|
-      unless draft_over && !player.save
+      if (!draft_over && player.save)
         flash[:notice] = 'Player was successfully drafted.'
         format.html { redirect_to(pick_path(Pick.current)) }
       else

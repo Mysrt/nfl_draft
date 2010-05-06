@@ -43,6 +43,10 @@ class PlayersController < ApplicationController
   end
   
   def undrafted
-    @players = Player.undrafted
+    unless params[:position.nil?]
+      @players = Player.filter_position(params[:position])
+    else
+      @players = Player.undrafted
+    end
   end
 end

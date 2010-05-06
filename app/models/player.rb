@@ -10,4 +10,9 @@ class Player < ActiveRecord::Base
   def self.undrafted
     Player.find(:all, :conditions => {:drafted => false})
   end
+  
+  def self.filter_position(position)
+    players = Player.find(:all, :conditions => {:position => position, :drafted => false})
+    players.sort_by{|player| player['name']}
+  end
 end
