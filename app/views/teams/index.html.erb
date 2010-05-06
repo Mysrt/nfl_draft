@@ -6,8 +6,12 @@ Teams
 <%= team.division %></h2>
 	
 	<% team.players.each do |player|%>
-		<li><%= player.name %>
-			<%= player.position %></li>
+		<li>
+			Pick Number <%= player.pick.pick_number %>
+			Round <%= player.pick.round %>
+			<%= player.name %>
+			<%= player.position %>
+			</li>
 		<% end %>
 <% end %>
 
