@@ -1,8 +1,8 @@
 class PicksController < ApplicationController
   
   def home
-    @previous_picks = []
     @pick = Pick.current
+    @end_of_draft = @pick.nil?
     @previous_picks = Pick.previous_picks
   end
   

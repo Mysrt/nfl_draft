@@ -3087,4 +3087,34 @@ rake tmp:sockets:clear
    -> 0.0089s
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:reset-D[Kgit push origin master[12Pcommit[1Padd .spec team_spec.rb[8Pgit add .spec pick_spec.rb[4hla[4lyer_spec.rb[2Pteam_spec.rbpick_spec.rbrake db:draft_information[10Pmigratedraft_information
 (in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git add .
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git commit
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ../../app/controllers/picks_controller.rb
+#	modified:   ../../app/controllers/players_controller.rb
+#	modified:   ../../app/models/pick.rb
+#	modified:   ../../app/models/player.rb
+#	modified:   ../../app/views/picks/home.html.erb
+#	modified:   ../../app/views/players/index.html.erb
+#	deleted:    ../../app/views/teams/_form.html.erb
+#	deleted:    ../../app/views/teams/edit.html.erb
+#	modified:   ../../app/views/teams/index.html.erb
+#	deleted:    ../../app/views/teams/new.html.erb
+#	modified:   ../../config/routes.rb
+#	modified:   ../../db/development.sqlite3
+#	modified:   ../../log/development.log
+#	modified:   ../../log/test.log
+#	modified:   ../../public/stylesheets/application.css
+#	modified:   ../../typescript
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../../app/views/picks/results.html.erb
+#	../../app/views/players/undrafted.html.erb
+no changes added to commit (use "git add" and/or "git commit -a")
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ 
