@@ -3248,4 +3248,22 @@ Finished in 0.144297 seconds
    -> 0.0084s
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:resetdraft_information
 (in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git db      rake db:reset
+(in /Users/jamestrowbridge/dev/nfl_draft)
+-- create_table("picks", {:force=>true})
+   -> 0.0827s
+-- create_table("players", {:force=>true})
+   -> 0.0043s
+-- create_table("teams", {:force=>true})
+   -> 0.0045s
+-- create_table("users", {:force=>true})
+   -> 0.0041s
+-- initialize_schema_migrations_table()
+   -> 0.0053s
+-- assume_migrated_upto_version(20100505175032)
+   -> 0.0093s
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db  simulate_draft
+(in /Users/jamestrowbridge/dev/nfl_draft)
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ 

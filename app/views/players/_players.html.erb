@@ -23,7 +23,7 @@
 <% players.each do |player| %>
 	<li><%= player.name %>
 		<%= player.position %>
-		<% unless pick.pick_number == 255 %>
+		<% unless pick.nil? %>
 			<%= link_to 'Draft Player', draft_player_path(pick) %></li>
 		<% end %>
 			
