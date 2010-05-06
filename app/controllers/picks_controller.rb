@@ -18,16 +18,24 @@ class PicksController < ApplicationController
   def draft_player
     
     player = Player.find(params[:id])
-    draft_over = Pick.current.team.draft(player)
-    respond_to do |format|
-      if (!draft_over && player.save)
-        flash[:notice] = 'Player was successfully drafted.'
-        format.html { redirect_to(pick_path(Pick.current)) }
-      else
-        flash[:notice] = 'The Draft is over, cannot pick more players, 
-        or there was an error drafting the player you selected'
-        format.html { redirect_to(root_path) }
+    
+    unless player.drafted
+      draft_over = Pick.current.team.draft(player)
+      
+      respond_to do |format|
+        if (!draft_over && player.save)
+          flash[:notice] = 'Player was successfully drafted.'
+          format.html { redirect_to(pick_path(Pick.current)) }
+        else
+          flash[:notice] = 'The Draft is over, cannot pick more players, 
+          or there was an error drafting the player you selected'
+          format.html { redirect_to(root_path) }
+        end
       end
+      
+    else
+      flash[:notice] = 'That player has already been drafted'
+      redirect_to(pick_path(Pick.current))
     end
   end
   

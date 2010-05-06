@@ -3266,4 +3266,36 @@ Finished in 0.144297 seconds
 (in /Users/jamestrowbridge/dev/nfl_draft)
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db  simulate_draft
 (in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake simulate_draftdb:draft_informationreset[K
+(in /Users/jamestrowbridge/dev/nfl_draft)
+-- create_table("picks", {:force=>true})
+   -> 0.0701s
+-- create_table("players", {:force=>true})
+   -> 0.0038s
+-- create_table("teams", {:force=>true})
+   -> 0.0039s
+-- create_table("users", {:force=>true})
+   -> 0.0032s
+-- initialize_schema_migrations_table()
+   -> 0.0050s
+-- assume_migrated_upto_version(20100505175032)
+   -> 0.0095s
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:reset[4hsimula[4lte_draftdb:draft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_informationreset[K
+(in /Users/jamestrowbridge/dev/nfl_draft)
+-- create_table("picks", {:force=>true})
+   -> 0.0673s
+-- create_table("players", {:force=>true})
+   -> 0.0033s
+-- create_table("teams", {:force=>true})
+   -> 0.0033s
+-- create_table("users", {:force=>true})
+   -> 0.0041s
+-- initialize_schema_migrations_table()
+   -> 0.0073s
+-- assume_migrated_upto_version(20100505175032)
+   -> 0.0087s
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:resetdraft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
 [0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ 
