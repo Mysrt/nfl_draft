@@ -95,6 +95,8 @@ describe Pick do
       Pick.current == @pick
       Pick.previous_picks.include?(pick_one)
     end
+    
+
   end
   
 end

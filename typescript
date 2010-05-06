@@ -2543,4 +2543,196 @@ no changes added to commit (use "git add" and/or "git commit -a")
 [30m 36 [m[33m# [m[36m../rcov.opts[m
 [30m 37 [m[33m# [m[36m../spec.opts[m
 [30m 38 [m[33m# [m[36m../spec_helper.rb[m
-[30m 39 [m[33m# [m[36m../../typescript[m[40;103H1,0-1[9CAll[1;5H[40;93Hf[1;5H[40;94Hi[1;5H[40;93H  [1;5H[40;1H[1m[30m[46m-- INSERT --[m[40;13H[K[40;103H1,1[11CAll[1;5H[1m[34mf[m[1m                                                                                                                   [m[40;105H2[1;6H[1m[34mi[m[1m                                                                                                                  [m[2;4H file           [3;4H files          [4;4H fixtures[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 3[m[2;4H file           [3;4H files          [4;4H fixtures[1;7H[1m[34mx[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[2;4H fixtures       [1;8H[1m[34me[m[1m                                                                                                                [m[2;4H[30m [m[33m# Please enter [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CAll[40;103H[K[40;103H1,5[11CAll[1;9H[1m[34md[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CAll[40;103H[K[40;103H1,6[11CAll[1;10H[1m[34m [m[1m                                                                                                              [m[40;105H7[1;11H[1m[34ms[m[1m                                                                                                             [m[40;105H8[1;12H[1m[34mo[m[1m                                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,9[11CAll[40;103H[K[40;103H1,9[11CAll[1;13H[1m[34mm[m[1m                                                                                                           [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,10[10CAll[40;103H[K[40;103H1,10[10CAll[1;14H[1m[34me[m[1m                                                                                                          [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,11[10CAll[40;103H[K[40;103H1,11[10CAll[1;15H[1m[34m [m[1m                                                                                                         [m[40;106H2[1;16H[1m[34mv[m[1m                                                                                                        [m[40;106H3[1;17H[1m[34mi[m[1m                                                                                                       [m[2;15H views          [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;15H[33mnter the commit [m[40;29H[1m[30m[46m The only match[m[2;15H views          [1;18H[1m[34me[m[1m                                                                                                      [m[2;15H[33mnter the commit [m[2;15H views          [1;19H[1m[34mw[m[1m                                                                                                     [m[2;15H[33mnter the commit [m[2;15H views          [1;20H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,16[10CAll[1;20H[1m[34m [m[1m                                                                                                    [m[2;15H[33mnter the commit [m[40;103H[K[40;103H1,17[10CAll[1;21H[1m[34mp[m[1m                                                                                                   [m[40;106H8[1;22H[1m[34mr[m[1m                                                                                                  [m[2;20H pro            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;20H[33mthe commit messa[m[40;29H[1m[30m[46m The only match[m[2;20H pro            [1;23H[1m[34mo[m[1m                                                                                                 [m[2;20H[33mthe commit messa[m[2;20H pro            [1;24H[1m[34mb[m[1m                                                                                                [m[2;20H[33mthe commit messa[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,21[10CAll[40;103H[K[40;103H1,21[10CAll[1;25H[1m[34ml[m[1m                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,22[10CAll[40;103H[K[40;103H1,22[10CAll[1;26H[1m[34me[m[1m                                                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,23[10CAll[40;103H[K[40;103H1,23[10CAll[1;27H[1m[34mm[m[1m                                                                                             [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,24[10CAll[40;103H[K[40;103H1,24[10CAll[1;28H[1m[34ms[m[1m                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,25[10CAll[40;103H[K[40;103H1,25[10CAll[1;29H[30m  1 [m[34mfixed some view problems[m[1;29H[K[2;1H[1m[30m  2 [m[1m                                                                                                                    [m[3;7H[33mPlease enter the commit message for your changes. Lines starting[m[3;71H[K[4;6H[33m with '#' will be ignored, and an empty message aborts the commit.[m[5;6H[K[6;6H[33m Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m[7;6H[K[8;7H[33mOn branch [m[37mmaster[m[8;23H[K[9;7H[34mChanges to be committed:[m[9;31H[K[10;6H[33m   (use "git reset HEAD <file>..." to unstage)[m[11;6H[K[12;28H[36mdevelopment.sqlite3[13;25Hdb/schema.rb[m[13;37H[K[14;6H[33m modified: [m[36m  ../../log/development.log[m[15;6H[K[16;7H[34mUntracked files:[m[16;23H[K[17;6H[33m   (use "git add <file>..." to include in what will be committed)[m[18;6H[K[19;13H[36m.DS_Store[m[19;22H[K[20;29H[36msessions_controller.rb[21;17Hcontrollers/users_controller.rb[22;25Hsessions_helper.rb[23;17Hhelpers/users_helper.rb[24;17Hmodels/user.rb[m[24;31H[K[25;24H[36micks/home.html.erb[m[25;42H[K[26;23H[36mplayers/_players.html.erb[27;23Hsessions/[28;13Happ/views/users/[m[28;29H[K[29;13H[36mdb/migrate/20100505175032_create_users.rb[30;17Hauthentication.rb[31;13Hlib/tasks/rspec.rake[32;13Hpublic/csv_files/[33;20Hautospec[34;10H../script/spec[35;10Hcontrollers/[36;10Hfixtures/[37;10Hrcov[38;14H.opts[m[38;19H[K[39;10H[36mspec_helper.rb[m[40;103H2,1 [10CTop[2;5H[40;1H[K[2;5H[40;93H^[[2;5H[40;93H  [2;5H[40;103H2,0-1[9CTop[2;5
+[30m 39 [m[33m# [m[36m../../typescript[m[40;103H1,0-1[9CAll[1;5H[40;93Hf[1;5H[40;94Hi[1;5H[40;93H  [1;5H[40;1H[1m[30m[46m-- INSERT --[m[40;13H[K[40;103H1,1[11CAll[1;5H[1m[34mf[m[1m                                                                                                                   [m[40;105H2[1;6H[1m[34mi[m[1m                                                                                                                  [m[2;4H file           [3;4H files          [4;4H fixtures[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[40;29H[1m[30m[46m [m[1m[32mmatch 1 of 3[m[2;4H file           [3;4H files          [4;4H fixtures[1;7H[1m[34mx[m[1m                                                                                                                 [m[2;4H[30m [m[33m# Please enter [m[3;4H[30m [m[33m# with '#' will[m[4;4H[30m [m[33m#[m[4;6H[K[2;4H fixtures       [1;8H[1m[34me[m[1m                                                                                                                [m[2;4H[30m [m[33m# Please enter [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,5[11CAll[40;103H[K[40;103H1,5[11CAll[1;9H[1m[34md[m[1m                                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,6[11CAll[40;103H[K[40;103H1,6[11CAll[1;10H[1m[34m [m[1m                                                                                                              [m[40;105H7[1;11H[1m[34ms[m[1m                                                                                                             [m[40;105H8[1;12H[1m[34mo[m[1m                                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,9[11CAll[40;103H[K[40;103H1,9[11CAll[1;13H[1m[34mm[m[1m                                                                                                           [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,10[10CAll[40;103H[K[40;103H1,10[10CAll[1;14H[1m[34me[m[1m                                                                                                          [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,11[10CAll[40;103H[K[40;103H1,11[10CAll[1;15H[1m[34m [m[1m                                                                                                         [m[40;106H2[1;16H[1m[34mv[m[1m                                                                                                        [m[40;106H3[1;17H[1m[34mi[m[1m                                                                                                       [m[2;15H views          [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;15H[33mnter the commit [m[40;29H[1m[30m[46m The only match[m[2;15H views          [1;18H[1m[34me[m[1m                                                                                                      [m[2;15H[33mnter the commit [m[2;15H views          [1;19H[1m[34mw[m[1m                                                                                                     [m[2;15H[33mnter the commit [m[2;15H views          [1;20H[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,16[10CAll[1;20H[1m[34m [m[1m                                                                                                    [m[2;15H[33mnter the commit [m[40;103H[K[40;103H1,17[10CAll[1;21H[1m[34mp[m[1m                                                                                                   [m[40;106H8[1;22H[1m[34mr[m[1m                                                                                                  [m[2;20H pro            [40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P)[m[2;20H[33mthe commit messa[m[40;29H[1m[30m[46m The only match[m[2;20H pro            [1;23H[1m[34mo[m[1m                                                                                                 [m[2;20H[33mthe commit messa[m[2;20H pro            [1;24H[1m[34mb[m[1m                                                                                                [m[2;20H[33mthe commit messa[m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,21[10CAll[40;103H[K[40;103H1,21[10CAll[1;25H[1m[34ml[m[1m                                                                                               [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,22[10CAll[40;103H[K[40;103H1,22[10CAll[1;26H[1m[34me[m[1m                                                                                              [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,23[10CAll[40;103H[K[40;103H1,23[10CAll[1;27H[1m[34mm[m[1m                                                                                             [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,24[10CAll[40;103H[K[40;103H1,24[10CAll[1;28H[1m[34ms[m[1m                                                                                            [m[40;1H[K[40;1H[1m[30m[46m-- Keyword completion (^N^P) [m[37m[41mPattern not found[m[40;1H[K[40;1H[1m[30m[46m-- INSERT --[m[90C1,25[10CAll[40;103H[K[40;103H1,25[10CAll[1;29H[30m  1 [m[34mfixed some view problems[m[1;29H[K[2;1H[1m[30m  2 [m[1m                                                                                                                    [m[3;7H[33mPlease enter the commit message for your changes. Lines starting[m[3;71H[K[4;6H[33m with '#' will be ignored, and an empty message aborts the commit.[m[5;6H[K[6;6H[33m Committer: James Trowbridge <jamestrowbridge@james-trowbridges-macbook-pro.local>[m[7;6H[K[8;7H[33mOn branch [m[37mmaster[m[8;23H[K[9;7H[34mChanges to be committed:[m[9;31H[K[10;6H[33m   (use "git reset HEAD <file>..." to unstage)[m[11;6H[K[12;28H[36mdevelopment.sqlite3[13;25Hdb/schema.rb[m[13;37H[K[14;6H[33m modified: [m[36m  ../../log/development.log[m[15;6H[K[16;7H[34mUntracked files:[m[16;23H[K[17;6H[33m   (use "git add <file>..." to include in what will be committed)[m[18;6H[K[19;13H[36m.DS_Store[m[19;22H[K[20;29H[36msessions_controller.rb[21;17Hcontrollers/users_controller.rb[22;25Hsessions_helper.rb[23;17Hhelpers/users_helper.rb[24;17Hmodels/user.rb[m[24;31H[K[25;24H[36micks/home.html.erb[m[25;42H[K[26;23H[36mplayers/_players.html.erb[27;23Hsessions/[28;13Happ/views/users/[m[28;29H[K[29;13H[36mdb/migrate/20100505175032_create_users.rb[30;17Hauthentication.rb[31;13Hlib/tasks/rspec.rake[32;13Hpublic/csv_files/[33;20Hautospec[34;10H../script/spec[35;10Hcontrollers/[36;10Hfixtures/[37;10Hrcov[38;14H.opts[m[38;19H[K[39;10H[36mspec_helper.rb[m[40;103H2,1 [10CTop[2;5H[40;1H[K[2;5H[40;93H^[[2;5H[40;93H  [2;5H[40;103H2,0-1[9CTop[2;5H[40;93H:[2;5H[40;93H[K[40;1H:w".git/COMMIT_EDITMSG" 40L, 1178C written[2;5H[40;103H2,0-1[9CTop[40;103H[K[40;103H2,0-1[9CTop[2;5H[40;93H:[2;5H[40;1H[K[40;1H:q[40;1H[K[40;1H[?1l>[2J[?47l8[master 16f5524] fixed some view problems
+ 3 files changed, 1381 insertions(+), 1 deletions(-)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ gitx
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ git push origin master
+Counting objects: 73, done.
+Delta compression using up to 2 threads.
+Compressing objects:   2% (1/49)   Compressing objects:   4% (2/49)   Compressing objects:   6% (3/49)   Compressing objects:   8% (4/49)   Compressing objects:  10% (5/49)   Compressing objects:  12% (6/49)   Compressing objects:  14% (7/49)   Compressing objects:  16% (8/49)   Compressing objects:  18% (9/49)   Compressing objects:  20% (10/49)   Compressing objects:  22% (11/49)   Compressing objects:  24% (12/49)   Compressing objects:  26% (13/49)   Compressing objects:  28% (14/49)   Compressing objects:  30% (15/49)   Compressing objects:  32% (16/49)   Compressing objects:  34% (17/49)   Compressing objects:  36% (18/49)   Compressing objects:  38% (19/49)   Compressing objects:  40% (20/49)   Compressing objects:  42% (21/49)   Compressing objects:  44% (22/49)   Compressing objects:  46% (23/49)   Compressing objects:  48% (24/49)   Compressing objects:  51% (25/49)   Compressing objects:  53% (26/49)   Compressing objects:  55% (27/49)   Compressing objects:  57% (28/49)   Compressing objects:  59% (29/49)   Compressing objects:  61% (30/49)   Compressing objects:  63% (31/49)   Compressing objects:  65% (32/49)   Compressing objects:  67% (33/49)   Compressing objects:  69% (34/49)   Compressing objects:  71% (35/49)   Compressing objects:  73% (36/49)   Compressing objects:  75% (37/49)   Compressing objects:  77% (38/49)   Compressing objects:  79% (39/49)   Compressing objects:  81% (40/49)   Compressing objects:  83% (41/49)   Compressing objects:  85% (42/49)   Compressing objects:  87% (43/49)   Compressing objects:  89% (44/49)   Compressing objects:  91% (45/49)   Compressing objects:  93% (46/49)   Compressing objects:  95% (47/49)   Compressing objects:  97% (48/49)   Compressing objects: 100% (49/49)   Compressing objects: 100% (49/49), done.
+Writing objects:   1% (1/54)   Writing objects:   3% (2/54)   Writing objects:   5% (3/54)   Writing objects:   7% (4/54)   Writing objects:   9% (5/54)   Writing objects:  11% (6/54)   Writing objects:  12% (7/54)   Writing objects:  14% (8/54)   Writing objects:  16% (9/54)   Writing objects:  18% (10/54)   Writing objects:  20% (11/54)   Writing objects:  22% (12/54)   Writing objects:  24% (13/54)   Writing objects:  25% (14/54)   Writing objects:  27% (15/54)   Writing objects:  29% (16/54)   Writing objects:  31% (17/54)   Writing objects:  33% (18/54)   Writing objects:  35% (19/54)   Writing objects:  37% (20/54)   Writing objects:  38% (21/54)   Writing objects:  40% (22/54)   Writing objects:  42% (23/54)   Writing objects:  44% (24/54)   Writing objects:  46% (25/54)   Writing objects:  48% (26/54)   Writing objects:  50% (27/54)   Writing objects:  51% (28/54)   Writing objects:  53% (29/54)   Writing objects:  55% (30/54)   Writing objects:  57% (31/54)   Writing objects:  59% (32/54)   Writing objects:  61% (33/54)   Writing objects:  62% (34/54)   Writing objects:  64% (35/54)   Writing objects:  66% (36/54)   Writing objects:  68% (37/54)   Writing objects:  70% (38/54)   Writing objects:  72% (39/54)   Writing objects:  74% (40/54)   Writing objects:  75% (41/54)   Writing objects:  77% (42/54)   Writing objects:  79% (43/54)   Writing objects:  81% (44/54)   Writing objects:  83% (45/54)   Writing objects:  85% (46/54)   Writing objects:  87% (47/54)   Writing objects:  88% (48/54)   Writing objects:  90% (49/54)   Writing objects:  92% (50/54)   Writing objects:  94% (51/54)   Writing objects:  96% (52/54)   Writing objects:  98% (53/54)   Writing objects: 100% (54/54)   Writing objects: 100% (54/54), 49.56 KiB, done.
+Total 54 (delta 15), reused 0 (delta 0)
+To git@github.com:Mysrt/nfl_draft.git
+   20637a7..d45e2d4  master -> master
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ cd..
+bash: cd..: command not found
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ cd..
+bash: cd..: command not found
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ P cd..git push origin masterx[K commit -a[K[1Padd .rake db:draft_information-D[Kdb:draft_players[6Pmigraterollbackgit push origin master[6Prake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateUsers: reverting ====================================================
+-- drop_table(:users)
+   -> 0.0008s
+==  CreateUsers: reverted (0.0009s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePicks: reverting ====================================================
+-- drop_table(:picks)
+   -> 0.0009s
+==  CreatePicks: reverted (0.0010s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreateTeams: reverting ====================================================
+-- drop_table(:teams)
+   -> 0.0008s
+==  CreateTeams: reverted (0.0009s) ===========================================
+
+^[[A[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:rollback
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: reverting ==================================================
+-- drop_table(:players)
+   -> 0.0013s
+==  CreatePlayers: reverted (0.0014s) =========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:migrate
+(in /Users/jamestrowbridge/dev/nfl_draft)
+==  CreatePlayers: migrating ==================================================
+-- create_table(:players)
+   -> 0.0082s
+==  CreatePlayers: migrated (0.0084s) =========================================
+
+==  CreateTeams: migrating ====================================================
+-- create_table(:teams)
+   -> 0.0018s
+==  CreateTeams: migrated (0.0020s) ===========================================
+
+==  CreatePicks: migrating ====================================================
+-- create_table(:picks)
+   -> 0.0016s
+==  CreatePicks: migrated (0.0017s) ===========================================
+
+==  CreateUsers: migrating ====================================================
+-- create_table(:users)
+   -> 0.0014s
+==  CreateUsers: migrated (0.0015s) ===========================================
+
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_information
+(in /Users/jamestrowbridge/dev/nfl_draft)
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ rake db:draft_information[10Pmigraterollbackcd..[Kgit push origin masterx[K commit -a[K[1Padd .rake db:draft_information-D[Kdb:draft_players[6Pmigraterollbackgit push origin master[9Pcommit -a[K[1Padd .commit[1Padd .spec team_spec.rbgit push origin master[5Pspec team_spec.rb[1P[1P[1P[1P[4hp[4l[4hi[4l[4hc[4l[4hk[4l
+.........
+
+Finished in 0.151429 seconds
+
+9 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb[1P[1P[1P[1P[4ht[4l[4he[4l[4ha[4l[4hm[4l
+..F
+
+1)
+NoMethodError in 'Team when we try to draft a player should not allow any more players to be drafted after the last pick'
+undefined method `pick_numer' for #<Pick:0x10391e070>
+./team_spec.rb:44:
+
+Finished in 0.594589 seconds
+
+3 examples, 1 failure
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+...
+
+Finished in 0.5995 seconds
+
+3 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+...
+
+Finished in 0.607404 seconds
+
+3 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb
+...
+
+Finished in 0.60767 seconds
+
+3 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec team_spec.rb[1P[1P[1P[1P[4hp[4l[4hl[4l[4ha[4l[4hy[4l[4he[4l[4hr[4l
+..
+
+Finished in 0.118265 seconds
+
+2 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec player_spec.rb[1P[1P[1P[1P[1P[4hi[4l[4hc[4l[4hk[4l
+........
+
+Finished in 0.140206 seconds
+
+8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/controllers/picks_controller.rb:58: syntax error, unexpected '=', expecting kEND (SyntaxError)
+    last_pick? = Pick.current.team.draft(Player.find(params[:id]))
+                ^
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+........
+
+Finished in 0.143213 seconds
+
+8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+/opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require': /Users/jamestrowbridge/dev/nfl_draft/app/models/team.rb:11: syntax error, unexpected kTRUE, expecting kEND (SyntaxError)
+    do_drafting?(player,self) true : false
+                                  ^
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+	from /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:414:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:413:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:411:in `load_application_classes'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:197:in `process'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `send'
+	from /opt/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/initializer.rb:113:in `run'
+	from /Users/jamestrowbridge/dev/nfl_draft/config/environment.rb:10
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/jamestrowbridge/dev/nfl_draft/spec/spec_helper.rb:4
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+	from /opt/local/lib/ruby/vendor_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+	from ./pick_spec.rb:1
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_files'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+	from /opt/local/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+	from /opt/local/bin/spec:19:in `load'
+	from /opt/local/bin/spec:19
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ spec pick_spec.rb
+........
+
+Finished in 0.145101 seconds
+
+8 examples, 0 failures
+[0;35m(master)[0;32m~/dev/nfl_draft/spec/models[0m ➔ 

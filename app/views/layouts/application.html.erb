@@ -8,6 +8,7 @@
 	<% else %>
 		<%= render :partial => '/sessions/new' %>
 	<% end %>
+	<div class='right_column'><%= link_to "Home", root_path %></div>
 	</h3>
     <title><%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'application' %>

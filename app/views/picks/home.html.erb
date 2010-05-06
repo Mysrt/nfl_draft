@@ -1,16 +1,16 @@
-
-
 <h2>Welcome to the Chase Mock Draft</h2>
 <% if logged_in? %>
 <h1>If you are an admin and would like to perform the draft click <%= link_to "here", pick_path(@pick) %><h1>
 <% end %>
 <h2>The <%= @pick.team.name %> are on the Clock! with pick number <%= @pick.pick_number %> in the draft<h2>
 	
-<div class='left_column'>The Previous 3 picks have been
+The Previous 3 picks have been
 	<% @previous_picks.each do |pick| %>
 		<li><h1><%= pick.team.name %><h1>
 			Who drafted <%= pick.player.name%>, <%=pick.player.position%></li>
 	<% end %>
-</div>
-<div class='right_column'>The next pick will be</div>
-<li><%= Pick.next.team.name %>
+	
+<h2>The next pick will be</h2>
+<li><%= Pick.next.team.name %></li>
+
+<h1>To view what players your team drafted click <%= link_to "here", teams_path %><h1>

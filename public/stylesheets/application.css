@@ -59,14 +59,13 @@ div.container {
   margin-top: 20px;
 }
 
-div.container div.right_column {
-  width: 520px;
+#right_column {
+  width: 340px;
   float: right;
 }
 
-div.container div.left_column {
-  width: 360px;
-  display: inline;
+#left_column {
+  width: 520px;
   float: left;
 }
 
