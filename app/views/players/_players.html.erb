@@ -1,3 +1,4 @@
+
 <h1>Players still undrafted</h1>
 <%= link_to "QB", undrafted_path(:position => "QB")%> |
 <%= link_to "WR", undrafted_path(:position => "WR")%> |
@@ -21,5 +22,9 @@
 
 <% players.each do |player| %>
 	<li><%= player.name %>
-		<%= player.position %></li>
+		<%= player.position %>
+		<% unless pick.pick_number == 255 %>
+			<%= link_to 'Draft Player', draft_player_path(pick) %></li>
+		<% end %>
+			
 <% end %>

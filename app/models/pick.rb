@@ -2,6 +2,8 @@ class Pick < ActiveRecord::Base
   has_one :player
   has_one :team
   
+  validates_presence_of  :team_id
+  
   def team
     Team.find(self.team_id)
   end

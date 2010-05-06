@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to_target_or_default(root_url)
     else
       flash.now[:error] = "Invalid login or password."
-      render :action => 'new'
+      redirect_to_target_or_default(root_url)
     end
   end
   

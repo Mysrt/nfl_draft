@@ -22,12 +22,13 @@ class Team < ActiveRecord::Base
   protected
   
   def do_drafting(player, team)
-      player.drafted      = true
+      player.drafted          = true
       player.save
       
-      current_pick        = Pick.current
-      current_pick.player = player
-      current_pick.used   = true
+      current_pick            = Pick.current
+      current_pick.player     = player
+      current_pick.player_id  = player.id
+      current_pick.used       = true
       current_pick.save
       team.players.push(player)
 

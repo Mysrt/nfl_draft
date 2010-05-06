@@ -1,22 +1,8 @@
-<% title "Pick" %>
+<%= "Pick" %>
 
-<p>
-  <strong>Round:</strong>
-  <%= @pick.round %>
-</p>
-<p>
-  <strong>Pick Number:</strong>
-  <%= @pick.pick_number %>
-</p>
-<p>
-  <strong>Team:</strong>
-  <%= @pick.team.name %>
-</p>
+<h1>Round: <%= @pick.round %></h1>
+<h1>Pick Number: <%= @pick.pick_number %></h1>
+<h1>Team: <%= @pick.team.name %></h1>
 
-<%= render :partial => '/players/players', :locals => {:players => @players}%>
-<p>
-  <%= link_to "Edit", edit_pick_path(@pick) %> |
-  <%= link_to "Destroy", @pick, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", picks_path %>
-</p>
+<%= render :partial => '/players/players', :locals => {:players => @players, :pick => @pick }%>
 
