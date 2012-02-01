@@ -5,5 +5,5 @@
       picks.each do |pick|
         pick.team.kiper_draft
       end
- 
+
   end

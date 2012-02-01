@@ -4,7 +4,7 @@ Teams
 <% @teams.each do |team|%>
 	<h2><%= team.name %>
 <%= team.division %></h2>
-	
+
 	<% team.players.each do |player|%>
 		<li>
 			Pick Number <%= player.pick.pick_number %>

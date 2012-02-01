@@ -40,16 +40,16 @@ Below is a complete listing of changes for each revision of FasterCSV.
   be detected without reading ahead.
 * Added a <tt>:field_size_limit</tt> option to control FasterCSV's lookahead and
   prevent the parser from biting off more data than it can chew.
-  
+
 == 1.2.3
 
 * Default to the system line ending when passed a GzipWriter object to wrap.
-  
+
 == 1.2.2
 
 * Worked around GzipReader's lack of a seek() method so we could still use
   automatic row separator detection with them.
-  
+
 == 1.2.1
 
 * Worked around an odd incompatibility with the Regexps used to remove line

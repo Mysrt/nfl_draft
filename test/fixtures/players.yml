@@ -5,11 +5,11 @@ one:
   position: MyString
   drafted: false
   pick: 1
-  team: 
+  team:
 
 two:
   name: MyString
   position: MyString
   drafted: false
   pick: 1
-  team: 
+  team:

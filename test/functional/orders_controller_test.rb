@@ -5,46 +5,46 @@ class OrdersControllerTest < ActionController::TestCase
     get :index
     assert_template 'index'
   end
-  
+
   def test_show
     get :show, :id => Order.first
     assert_template 'show'
   end
-  
+
   def test_new
     get :new
     assert_template 'new'
   end
-  
+
   def test_create_invalid
     Order.any_instance.stubs(:valid?).returns(false)
     post :create
     assert_template 'new'
   end
-  
+
   def test_create_valid
     Order.any_instance.stubs(:valid?).returns(true)
     post :create
     assert_redirected_to order_url(assigns(:order))
   end
-  
+
   def test_edit
     get :edit, :id => Order.first
     assert_template 'edit'
   end
-  
+
   def test_update_invalid
     Order.any_instance.stubs(:valid?).returns(false)
     put :update, :id => Order.first
     assert_template 'edit'
   end
-  
+
   def test_update_valid
     Order.any_instance.stubs(:valid?).returns(true)
     put :update, :id => Order.first
     assert_redirected_to order_url(assigns(:order))
   end
-  
+
   def test_destroy
     order = Order.first
     delete :destroy, :id => order
