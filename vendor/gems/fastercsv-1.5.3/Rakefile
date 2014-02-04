@@ -35,7 +35,7 @@ end
 desc "Show library's code statistics"
 task :stats do
 	require 'code_statistics'
-	CodeStatistics.new( ["FasterCSV", "lib"], 
+	CodeStatistics.new( ["FasterCSV", "lib"],
 	                    ["Units",     "test"] ).to_s
 end
 
